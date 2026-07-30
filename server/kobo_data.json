@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "project": "Medical Referral - KoboToolbox Simulation",
+    "form_id": "referral_form_v1",
+    "note": "بيانات تدريبية وهمية تحاكي إرساليات مشروع Kobo — ليست بيانات حقيقية. كلمات المرور مخزّنة كنص صريح لأغراض التدريب فقط."
+  },
+  "submissions": [
+    {
+      "_id": 1,
+      "national_id": "804734739",
+      "password": "1234",
+      "full_name": "أحمد ابراهيم سلامه الجبالي",
+      "mobile_no": "0566007300",
+      "specialization": "باطنة عامة",
+      "referral_date": "2025-05-28",
+      "status": "معتمد",
+      "travel_status": 0,
+      "is_stopped": false,
+      "is_rejected": false,
+      "rejection_messages": [],
+      "return_reason": null
+    },
+    {
+      "_id": 2,
+      "national_id": "900112233",
+      "password": "1234",
+      "full_name": "منى خالد حسن عودة",
+      "mobile_no": "0599123456",
+      "specialization": "أورام",
+      "referral_date": "2025-06-10",
+      "status": "معتمد",
+      "travel_status": 25,
+      "is_stopped": false,
+      "is_rejected": false,
+      "rejection_messages": [],
+      "return_reason": null
+    },
+    {
+      "_id": 3,
+      "national_id": "700556677",
+      "password": "1234",
+      "full_name": "يوسف سامي أحمد النجار",
+      "mobile_no": "0567889900",
+      "specialization": "قلبية",
+      "referral_date": "2025-07-01",
+      "status": "تحت الإجراء",
+      "travel_status": 0,
+      "is_stopped": false,
+      "is_rejected": false,
+      "rejection_messages": [],
+      "return_reason": null
+    },
+    {
+      "_id": 4,
+      "national_id": "811223344",
+      "password": "1234",
+      "full_name": "سلمى ماهر عبدالله شاهين",
+      "mobile_no": "0561234567",
+      "specialization": "عظام",
+      "referral_date": "2025-06-20",
+      "status": "مرفوض",
+      "travel_status": 0,
+      "is_stopped": false,
+      "is_rejected": true,
+      "rejection_messages": [
+        "تم رفض التحويلة لعدم اكتمال التقارير الطبية المطلوبة"
+      ],
+      "return_reason": "نقص في المستندات"
+    },
+    {
+      "_id": 5,
+      "national_id": "655667788",
+      "password": "1234",
+      "full_name": "خالد وليد محمود أبو زيد",
+      "mobile_no": "0598877665",
+      "specialization": "أعصاب",
+      "referral_date": "2025-05-15",
+      "status": "موقوف",
+      "travel_status": 0,
+      "is_stopped": true,
+      "is_rejected": false,
+      "rejection_messages": [],
+      "return_reason": null
+    }
+  ],
+  "global_stats": {
+    "total_referrals": 31101,
+    "traveled": 4698,
+    "nominated_not_traveled": 5405,
+    "urgent_pending": 515,
+    "egypt_approved": 2669,
+    "egypt_denied": 111,
+    "cla_approved": 727,
+    "cla_denied": 72
+  }
+}

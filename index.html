@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+
+
+<html lang="ar" direction="rtl" dir="rtl" style="direction: rtl">
+
+<!--begin::Head-->
+<head>
+    
+    <title>منظومة صحتي الالكترونية</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="" />
+    <link rel="canonical" href="" />
+    <link rel="shortcut icon" href="assets/media/logos/favicon.ico" />
+    <!--begin::Fonts-->
+    
+    <!--end::Fonts-->
+    <!--begin::Global Stylesheets Bundle(used by all pages)-->
+    <link href="assets/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/style.bundle.css" rel="stylesheet" type="text/css" />
+    
+
+    <!--end::Global Stylesheets Bundle-->
+    <link href="assets/styles.css" rel="stylesheet" type="text/css" />
+
+    <link href="assets/fonts/tajawal.css" rel="stylesheet" type="text/css" />
+    <link href="assets/fonts/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/front/narin.css">
+
+    <style>
+        .image2 img {
+
+            animation: up-and-down 5s linear infinite;
+            -webkit-animation: up-and-down 5s linear infinite;
+            transition: var(--main-transition);
+            transform: skewX(10deg);
+            -webkit-transform: skewX(10deg);
+            -moz-transform: skewX(10deg);
+            -ms-transform: skewX(10deg);
+            -o-transform: skewX(10deg);
+
+            -webkit-transition: var(--main-transition);
+            -moz-transition: var(--main-transition);
+            -ms-transition: var(--main-transition);
+            -o-transition: var(--main-transition);
+        }
+
+        #dv_referral {
+            font-size: 16px;
+            /* Initial font size */
+            color: blue;
+            text-decoration: none;
+            transition: transform 0.3s ease, font-size 0.3s ease;
+            /* Smooth transition */
+        }
+
+        #dv_referral:hover {
+            --bs-active-primary: #0095E8;
+            color: rgb(156, 182, 53);
+            font-size: 50px;
+            /* Increased font size on hover */
+            transform: scale(1.1);
+            /* Optional: Scales the whole element slightly */
+        }
+
+        body {
+            font-family: Poppins, Tajawal, Helvetica, sans-serif;
+        }
+
+    </style>
+
+
+</head>
+<!--end::Head-->
+<!--begin::Body-->
+<body id="kt_body" data-bs-spy="scroll" data-bs-target="#kt_landing_menu" data-bs-offset="200" class="bg-white position-relative">
+    <!--begin::Main-->
+    <div class="d-flex flex-column flex-root">
+        <!--begin::Header Section-->
+        <div class="mb-0" id="home">
+            <!--begin::Wrapper-->
+            <div class="bgi-no-repeat bgi-size-contain bgi-position-x-center bgi-position-y-bottom landing-dark-bg" style="background-image: url(assets/media/svg/illustrations/landing.svg)">
+                <!--begin::Header-->
+                <div class="landing-header" data-kt-sticky="true" data-kt-sticky-name="landing-header" data-kt-sticky-offset="{default: '200px', lg: '300px'}">
+                    <!--begin::Container-->
+                    <div class="container">
+                        <!--begin::Wrapper-->
+                        <div class="d-flex align-items-center justify-content-between">
+                            <!--begin::Logo-->
+                            <div class="d-flex align-items-center flex-equal">
+                                <!--begin::Mobile menu toggle-->
+                                <button class="btn btn-icon btn-active-color-primary me-3 d-flex d-lg-none" id="kt_landing_menu_toggle">
+                                    <!--begin::Svg Icon | path: icons/duotune/abstract/abs015.svg-->
+                                    <span class="svg-icon svg-icon-2hx">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z" fill="black" />
+                                            <path opacity="0.3" d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z" fill="black" />
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </button>
+                                <!--end::Mobile menu toggle-->
+                                <!--begin::Logo image-->
+                                <a href="/">
+
+                                    <img alt="Logo" src=assets/sehatty_moh.png class="logo-default h-70px h-lg-70px" />
+
+                                    <img alt="Logo" src=assets/sehatty_moh2.png class="logo-sticky h-60px h-lg-65px" />
+                                </a>
+                                <!--end::Logo image-->
+                            </div>
+                            <!--end::Logo-->
+                            <!--begin::Menu wrapper-->
+                            <div class="d-lg-block" id="kt_header_nav_wrapper">
+                                <div class="d-lg-block p-5 p-lg-0" data-kt-drawer="true" data-kt-drawer-name="landing-menu" data-kt-drawer-activate="{default: true, lg: false}" data-kt-drawer-overlay="true" data-kt-drawer-width="200px" data-kt-drawer-direction="start" data-kt-drawer-toggle="#kt_landing_menu_toggle" data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_body', lg: '#kt_header_nav_wrapper'}">
+                                    <!--begin::Menu-->
+                                    <div class="menu menu-column flex-nowrap menu-rounded menu-lg-row menu-title-gray-500 menu-state-title-primary nav nav-flush fs-5 fw-bold" id="kt_landing_menu">
+                                        <!--begin::Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin::Menu link-->
+                                            <a class="menu-link nav-link active py-3 px-4 px-xxl-6" href="#kt_body" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">الرئيسية</a>
+                                            <!--end::Menu link-->
+                                        </div>
+                                        <!--end::Menu item-->
+                                        
+                                        <!--begin::Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin::Menu link-->
+                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#electronic-services" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">الخدمات الالكترونية</a>
+                                            <!--end::Menu link-->
+                                        </div>
+                                        <!--end::Menu item-->
+                                        <!--begin::Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin::Menu link-->
+                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#our-statistics" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">احصائياتنا </a>
+                                            <!--end::Menu link-->
+                                        </div>
+                                        <!--end::Menu item-->
+                                        <!--begin::Menu item-->
+                                        <div class="menu-item">
+                                            <!--begin::Menu link-->
+                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#information-center" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">مركز المعلومات</a>
+                                            <!--end::Menu link-->
+                                        </div>
+                                        <!--end::Menu item-->
+                                        <!--begin::Menu item-->
+                                         <div class="menu-item">
+                                            <a class="menu-link nav-link py-3 px-4 px-xxl-6" href="#tenders" data-kt-scroll-toggle="true" data-kt-drawer-dismiss="true">العطاءات</a>
+                                        </div> 
+                                        <!--end::Menu item-->
+                                        <!--begin::Menu item-->
+                                        
+                                        <!--end::Menu item-->
+
+                                        
+                                    </div>
+                                    <!--end::Menu-->
+                                </div>
+                            </div>
+                            <!--end::Menu wrapper-->
+                            <!--begin::Toolbar-->
+                            <div class="flex-equal text-end ms-1">
+                                
+                                <a class="btn btn-sm btn-success" href="https://sehatty.ps/create_complaint">
+                                    <span class="fs-6">للشكاوي والاستفسارات (103) <i class="las la-phone-volume text-white fs-6"></i></span>
+                                </a>
+
+                                
+                            </div>
+                            <!--end::Toolbar-->
+                        </div>
+                        <!--end::Wrapper-->
+                    </div>
+                    <!--end::Container-->
+                </div>
+                <!--end::Header-->
+                <!--begin::Landing hero-->
+                <div class="d-flex flex-column flex-center w-100 min-h-350px min-h-lg-500px px-9">
+    <!--begin::Heading-->
+    <div class="tns tns-default mb-20">
+        <!--begin::Slider-->
+        <div data-tns="true" data-tns-loop="true" data-tns-swipe-angle="false" data-tns-speed="2000" data-tns-autoplay="true"
+            data-tns-autoplay-timeout="18000" data-tns-controls="true" data-tns-nav="false" data-tns-items="1"
+            data-tns-center="false" data-tns-dots="false" data-tns-prev-button="#kt_team_slider_prev1"
+            data-tns-next-button="#kt_team_slider_next1">
+            <!--begin::Item-->
+            
+
+            <div class="text-center px-5 pt-5 pt-lg-10 px-lg-10" dir="rtl">
+                <style>
+                    /* زر نبضي */
+                    .pulse-button {
+                        animation: pulse 1.5s infinite;
+                    }
+
+                    @keyframes pulse {
+                        0% {
+                            box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.6);
+                        }
+
+                        70% {
+                            box-shadow: 0 0 0 12px rgba(220, 53, 69, 0);
+                        }
+
+                        100% {
+                            box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+                        }
+                    }
+
+                    /* تحسين التوست */
+                    .custom-toast {
+                        border-radius: 18px;
+                        border: 1px solid #e5e5e5 !important;
+                        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+                        animation: fadeSlide 0.7s ease-out;
+                        background: #ffffff;
+                    }
+
+                    @keyframes fadeSlide {
+                        from {
+                            opacity: 0;
+                            transform: translateY(25px);
+                        }
+
+                        to {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+
+                    .toast-header {
+                        background: #f8f9ff;
+                        border-bottom: 1px solid #e3e6f0;
+                    }
+                </style>
+
+                <div class="toast show flex-center mx-auto custom-toast text-center" role="alert" aria-live="assertive" aria-atomic="true"
+     style="width: 90%; max-width: 750px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.15);">
+    <div class="toast-header py-3 w-100 d-flex justify-content-center">
+        <strong class="text-primary fs-4">🚨 هـــــــام جــدًا 🚨</strong>
+    </div>
+
+    <div class="toast-body text-dark fs-5 text-end p-4">
+
+        <!-- تنبيه الرسوم -->
+        <div class="text-center mb-4 p-3" style="background-color: #fff3cd; border: 2px dashed #ff0000; border-radius: 15px;">
+            <h4 class="fw-bolder text-danger mb-2">⚠️ تنبيه هام جداً</h4>
+            <p class="fs-4 fw-bold text-dark mb-0">
+                لا رسوم للتحويلة الطبية من أي جهة
+            </p>
+            <small class="text-dark">(نرجو الحذر لتفادي أي استغلال)</small>
+        </div>
+
+        <!-- تحديث بيانات المرضى -->
+        <p class="fs-5 mb-4 text-dark fw-semibold text-center">
+            تحديث بيانات مرضى الكلى، البتر ،السرطان
+        </p>
+
+        <div class="d-flex justify-content-center mb-5">
+            <a href="https://sehatty.ps/patient-registery" target="_blank" class="btn btn-danger fw-bold fs-5 px-5 py-3 rounded-pill pulse-button">
+                🔗 حدث الآن
+            </a>
+        </div>
+
+        <!-- ================= بند بطاقة حافل (الجديد) ================= -->
+        <div class="border-top pt-4 mb-4">
+            <p class="fs-5 mb-3 text-dark fw-bold text-center text-success">
+                💳 التسجيل لعمل بطاقة حافلة
+            </p>
+            
+            <div class="d-flex flex-column flex-sm-row justify-content-center gap-3 align-items-center mb-4">
+                <!-- رابط موظفي الصحة -->
+                <a href="https://apps.sehatty.ps/perm/index.php/Login" target="_blank" class="btn btn-success fw-bold fs-6 px-4 py-3 rounded-pill pulse-button">
+                    👨‍⚕️ موظف وزارة الصحة
+                </a>
+                
+                <!-- رابط موظفي الوزارات الأخرى -->
+                <a href="https://travel.sehatty.ps/" target="_blank" class="btn btn-secondary fw-bold fs-6 px-4 py-3 rounded-pill">
+                    🏢 موظف وزارات أخرى
+                </a>
+            </div>
+        </div>
+        <!-- ========================================================== -->
+
+        <!-- بند التسجيل الموحد للمواطنين -->
+        <p class="fs-5 mb-2 text-dark fw-semibold text-center">
+            للتسجيل الموحد للمواطنين
+        </p>
+
+        <div class="d-flex justify-content-center">
+            <a href="/citizen/login/" class="btn btn-primary fw-bold fs-5 px-5 py-3 rounded-pill pulse-button">
+                🔗 سجل الآن
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+
+                <img style="max-width:100%; max-height:450px; opacity:0.7; animation: up-and-down 3s linear infinite;"
+                    src="assets/hos3.jpg" class="card-rounded shadow mw-100 mt-3"
+                    alt="مستشفى غزة الأوروبي" />
+            </div>
+
+
+
+
+        </div>
+        <!--end::Slider-->
+        <!--begin::Slider button-->
+        <button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_prev1">
+            <span class="svg-icon svg-icon-3x">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none">
+                    <path
+                        d="M11.2657 11.4343L15.45 7.25C15.8642 6.83579 15.8642 6.16421 15.45 5.75C15.0358 5.33579 14.3642 5.33579 13.95 5.75L8.40712 11.2929C8.01659 11.6834 8.01659 12.3166 8.40712 12.7071L13.95 18.25C14.3642 18.6642 15.0358 18.6642 15.45 18.25C15.8642 17.8358 15.8642 17.1642 15.45 16.75L11.2657 12.5657C10.9533 12.2533 10.9533 11.7467 11.2657 11.4343Z"
+                        fill="black" />
+                </svg>
+            </span>
+            <!--end::Svg Icon-->
+        </button>
+        <!--end::Slider button-->
+        <!--begin::Slider button-->
+        <button class="btn btn-icon btn-active-color-primary" id="kt_team_slider_next1">
+            <!--begin::Svg Icon | path: icons/duotune/arrows/arr071.svg-->
+            <span class="svg-icon svg-icon-3x">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none">
+                    <path
+                        d="M12.6343 12.5657L8.45001 16.75C8.0358 17.1642 8.0358 17.8358 8.45001 18.25C8.86423 18.6642 9.5358 18.6642 9.95001 18.25L15.4929 12.7071C15.8834 12.3166 15.8834 11.6834 15.4929 11.2929L9.95001 5.75C9.5358 5.33579 8.86423 5.33579 8.45001 5.75C8.0358 6.16421 8.0358 6.83579 8.45001 7.25L12.6343 11.4343C12.9467 11.7467 12.9467 12.2533 12.6343 12.5657Z"
+                        fill="black" />
+                </svg>
+            </span>
+            <!--end::Svg Icon-->
+        </button>
+        <!--end::Slider button-->
+    </div>
+
+    <!--end::Heading-->
+    <!--begin::Clients-->
+
+    <div class="d-flex flex-center flex-wrap position-relative px-5">
+        <!-- BAYAN Logo -->
+        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="BAYAN">
+            <a id="dv_referral" href="https://dhis.sehatty.ps/dhis/dhis-web-login/"
+                class="symbol symbol-50px symbol-circle">
+                <div class="symbol-label bg-transparent">
+                    <img src="assets/bayan.png" alt="Logo" class="h-50 align-self-center">
+                </div>
+            </a>
+        </div>
+
+        <!-- Mortality-Surveys Logo -->
+        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="Mortality-Surveys">
+            <a id="dv_referral" href="https://apps.sehatty.ps/" class="symbol symbol-50px symbol-circle">
+                <div class="symbol-label bg-transparent">
+                    <img src="assets/mother.png" alt="Logo" class="h-50 align-self-center">
+                </div>
+            </a>
+        </div>
+
+        <!--begin::Client-->
+        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="تحويلات طبية">
+            <div class="symbol symbol-50px me-3">
+                <div class="">
+                    <a id="dv_referral" href="/citizen/citizen/referral/">
+                        <span class="svg-icon svg-icon-success svg-icon-3x"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path opacity="0.3"
+                                    d="M12.025 4.725C9.725 2.425 6.025 2.425 3.725 4.725C1.425 7.025 1.425 10.725 3.725 13.025L11.325 20.625C11.725 21.025 12.325 21.025 12.725 20.625L20.325 13.025C22.625 10.725 22.625 7.025 20.325 4.725C18.025 2.425 14.325 2.425 12.025 4.725Z"
+                                    fill="black" />
+                                <path
+                                    d="M14.025 17.125H13.925C13.525 17.025 13.125 16.725 13.025 16.325L11.925 11.125L11.025 14.325C10.925 14.725 10.625 15.025 10.225 15.025C9.825 15.125 9.425 14.925 9.225 14.625L7.725 12.325L6.525 12.925C6.425 13.025 6.225 13.025 6.125 13.025H3.125C2.525 13.025 2.125 12.625 2.125 12.025C2.125 11.425 2.525 11.025 3.125 11.025H5.925L7.725 10.125C8.225 9.925 8.725 10.025 9.025 10.425L9.825 11.625L11.225 6.72498C11.325 6.32498 11.725 6.02502 12.225 6.02502C12.725 6.02502 13.025 6.32495 13.125 6.82495L14.525 13.025L15.225 11.525C15.425 11.225 15.725 10.925 16.125 10.925H21.125C21.725 10.925 22.125 11.325 22.125 11.925C22.125 12.525 21.725 12.925 21.125 12.925H16.725L15.025 16.325C14.725 16.925 14.425 17.125 14.025 17.125Z"
+                                    fill="black" />
+                            </svg>
+                        </span>
+                    </a>
+                    <!--end::Svg Icon-->
+                </div>
+            </div>
+        </div>
+        <!--end::Client-->
+        <!--begin::Client-->
+        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="التبليغ عن الشهداء والمفقودين">
+            <div class="">
+                <a id="dv_referral" href="https://sehatty.ps/moh-registration/public/add-order">
+                    <span class="svg-icon svg-icon-3x svg-icon-warning">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path opacity="0.3"
+                                d="M21.6 11.2L19.3 8.89998V5.59993C19.3 4.99993 18.9 4.59993 18.3 4.59993H14.9L12.6 2.3C12.2 1.9 11.6 1.9 11.2 2.3L8.9 4.59993H5.6C5 4.59993 4.6 4.99993 4.6 5.59993V8.89998L2.3 11.2C1.9 11.6 1.9 12.1999 2.3 12.5999L4.6 14.9V18.2C4.6 18.8 5 19.2 5.6 19.2H8.9L11.2 21.5C11.6 21.9 12.2 21.9 12.6 21.5L14.9 19.2H18.2C18.8 19.2 19.2 18.8 19.2 18.2V14.9L21.5 12.5999C22 12.1999 22 11.6 21.6 11.2Z"
+                                fill="black"></path>
+                            <path
+                                d="M11.3 9.40002C11.3 10.2 11.1 10.9 10.7 11.3C10.3 11.7 9.8 11.9 9.2 11.9C8.8 11.9 8.40001 11.8 8.10001 11.6C7.80001 11.4 7.50001 11.2 7.40001 10.8C7.20001 10.4 7.10001 10 7.10001 9.40002C7.10001 8.80002 7.20001 8.4 7.30001 8C7.40001 7.6 7.7 7.29998 8 7.09998C8.3 6.89998 8.7 6.80005 9.2 6.80005C9.5 6.80005 9.80001 6.9 10.1 7C10.4 7.1 10.6 7.3 10.8 7.5C11 7.7 11.1 8.00005 11.2 8.30005C11.3 8.60005 11.3 9.00002 11.3 9.40002ZM10.1 9.40002C10.1 8.80002 10 8.39998 9.90001 8.09998C9.80001 7.79998 9.6 7.70007 9.2 7.70007C9 7.70007 8.8 7.80002 8.7 7.90002C8.6 8.00002 8.50001 8.2 8.40001 8.5C8.40001 8.7 8.30001 9.10002 8.30001 9.40002C8.30001 9.80002 8.30001 10.1 8.40001 10.4C8.40001 10.6 8.5 10.8 8.7 11C8.8 11.1 9 11.2001 9.2 11.2001C9.5 11.2001 9.70001 11.1 9.90001 10.8C10 10.4 10.1 10 10.1 9.40002ZM14.9 7.80005L9.40001 16.7001C9.30001 16.9001 9.10001 17.1 8.90001 17.1C8.80001 17.1 8.70001 17.1 8.60001 17C8.50001 16.9 8.40001 16.8001 8.40001 16.7001C8.40001 16.6001 8.4 16.5 8.5 16.4L14 7.5C14.1 7.3 14.2 7.19998 14.3 7.09998C14.4 6.99998 14.5 7 14.6 7C14.7 7 14.8 6.99998 14.9 7.09998C15 7.19998 15 7.30002 15 7.40002C15.2 7.30002 15.1 7.50005 14.9 7.80005ZM16.6 14.2001C16.6 15.0001 16.4 15.7 16 16.1C15.6 16.5 15.1 16.7001 14.5 16.7001C14.1 16.7001 13.7 16.6 13.4 16.4C13.1 16.2 12.8 16 12.7 15.6C12.5 15.2 12.4 14.8001 12.4 14.2001C12.4 13.3001 12.6 12.7 12.9 12.3C13.2 11.9 13.7 11.7001 14.5 11.7001C14.8 11.7001 15.1 11.8 15.4 11.9C15.7 12 15.9 12.2 16.1 12.4C16.3 12.6 16.4 12.9001 16.5 13.2001C16.6 13.4001 16.6 13.8001 16.6 14.2001ZM15.4 14.1C15.4 13.5 15.3 13.1 15.2 12.9C15.1 12.6 14.9 12.5 14.5 12.5C14.3 12.5 14.1 12.6001 14 12.7001C13.9 12.8001 13.8 13.0001 13.7 13.2001C13.6 13.4001 13.6 13.8 13.6 14.1C13.6 14.7 13.7 15.1 13.8 15.4C13.9 15.7 14.1 15.8 14.5 15.8C14.8 15.8 15 15.7 15.2 15.4C15.3 15.2 15.4 14.7 15.4 14.1Z"
+                                fill="black"></path>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--end::Client-->
+        <!--begin::Client-->
+        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="اغاثة الموظفين">
+            <div class="">
+                <a id="dv_referral" href="https://sehatty.ps/emp/login">
+                    <span class="svg-icon svg-icon-primary svg-icon-3x"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M16.0173 9H15.3945C14.2833 9 13.263 9.61425 12.7431 10.5963L12.154 11.7091C12.0645 11.8781 12.1072 12.0868 12.2559 12.2071L12.6402 12.5183C13.2631 13.0225 13.7556 13.6691 14.0764 14.4035L14.2321 14.7601C14.2957 14.9058 14.4396 15 14.5987 15H18.6747C19.7297 15 20.4057 13.8774 19.912 12.945L18.6686 10.5963C18.1487 9.61425 17.1285 9 16.0173 9Z"
+                                fill="black" />
+                            <rect opacity="0.3" x="14" y="4" width="4" height="4" rx="2"
+                                fill="black" />
+                            <path
+                                d="M4.65486 14.8559C5.40389 13.1224 7.11161 12 9 12C10.8884 12 12.5961 13.1224 13.3451 14.8559L14.793 18.2067C15.3636 19.5271 14.3955 21 12.9571 21H5.04292C3.60453 21 2.63644 19.5271 3.20698 18.2067L4.65486 14.8559Z"
+                                fill="black" />
+                            <rect opacity="0.3" x="6" y="5" width="6" height="6" rx="3"
+                                fill="black" />
+                        </svg>
+                    </span>
+                </a>
+                <!--end::Svg Icon-->
+                <!--end::Svg Icon-->
+            </div>
+            
+        </div>
+        <!--end::Client-->
+        <!--begin::Client-->
+        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="حصر حالات البتر">
+            <div class="">
+                <a id="dv_referral" href="https://sehatty.ps/patient_form">
+
+                    <span class="svg-icon svg-icon-danger svg-icon-3x">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <path opacity="0.3"
+                                d="M11 3C11 3.6 10.6 4 10 4V9H4H5C5.6 9 6 8.6 6 8C6 7.4 5.6 7 5 7H4V4C3.4 4 3 3.6 3 3C3 2.4 3.4 2 4 2H10C10.6 2 11 2.4 11 3ZM20 2H14C13.4 2 13 2.4 13 3C13 3.6 13.4 4 14 4V7H15C15.6 7 16 7.4 16 8C16 8.6 15.6 9 15 9H14V12H15C15.6 12 16 12.4 16 13C16 13.6 15.6 14 15 14H14H20V4C20.6 4 21 3.6 21 3C21 2.4 20.6 2 20 2Z"
+                                fill="black"></path>
+                            <path
+                                d="M10 9V19C10 20.7 8.7 22 7 22C5.3 22 4 20.7 4 19H5C5.6 19 6 18.6 6 18C6 17.4 5.6 17 5 17H4V14H5C5.6 14 6 13.6 6 13C6 12.4 5.6 12 5 12H4V9H10ZM14 14V17H15C15.6 17 16 17.4 16 18C16 18.6 15.6 19 15 19H14C14 20.7 15.3 22 17 22C18.7 22 20 20.7 20 19V14H14Z"
+                                fill="black"></path>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <!--end::Client-->
+
+        <!--begin::Client-->
+        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="افادة امتياز">
+            <div class="">
+                <!--begin::Svg Icon | path: assets/media/icons/duotune/arrows/arr084.svg-->
+                <a id="dv_referral" href="http://pub.sehatty.ps/hrd/public/student_query">
+                    <span class="svg-icon svg-icon-info svg-icon-3x"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path opacity="0.5"
+                                d="M12.8956 13.4982L10.7949 11.2651C10.2697 10.7068 9.38251 10.7068 8.85731 11.2651C8.37559 11.7772 8.37559 12.5757 8.85731 13.0878L12.7499 17.2257C13.1448 17.6455 13.8118 17.6455 14.2066 17.2257L21.1427 9.85252C21.6244 9.34044 21.6244 8.54191 21.1427 8.02984C20.6175 7.47154 19.7303 7.47154 19.2051 8.02984L14.061 13.4982C13.7451 13.834 13.2115 13.834 12.8956 13.4982Z"
+                                fill="black"></path>
+                            <path
+                                d="M7.89557 13.4982L5.79487 11.2651C5.26967 10.7068 4.38251 10.7068 3.85731 11.2651C3.37559 11.7772 3.37559 12.5757 3.85731 13.0878L7.74989 17.2257C8.14476 17.6455 8.81176 17.6455 9.20663 17.2257L16.1427 9.85252C16.6244 9.34044 16.6244 8.54191 16.1427 8.02984C15.6175 7.47154 14.7303 7.47154 14.2051 8.02984L9.06096 13.4982C8.74506 13.834 8.21146 13.834 7.89557 13.4982Z"
+                                fill="black"></path>
+                        </svg>
+                    </span>
+                    <!--end::Svg Icon-->
+                </a>
+            </div>
+        </div>
+        <!--end::Client-->
+        <!--begin::Client-->
+        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="خدمة انترنت">
+            <div class="">
+                <a id="dv_referral" href="https://sehatty.ps/internet-service">
+                    <!--begin::Svg Icon | path: assets/media/icons/duotune/technology/teh001.svg-->
+                    <span class="svg-icon svg-icon-success svg-icon-3x"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M13 2.375L22 9.57501V20.575C22 21.175 21.6 21.575 21 21.575H3C2.4 21.575 2 21.175 2 20.575V9.57501L11 2.375C11.6 1.875 12.4 1.875 13 2.375ZM18.6 11.975C18.9 11.575 18.8 10.875 18.4 10.575C14.6 7.87501 9.40001 7.87501 5.60001 10.575C5.20001 10.875 4.99999 11.475 5.39999 11.975C5.69999 12.375 6.29999 12.575 6.79999 12.175C9.89999 9.97499 14.1 9.97499 17.3 12.175C17.5 12.275 17.7 12.375 17.9 12.375C18.1 12.475 18.4 12.275 18.6 11.975ZM14 18.575C14.3 18.175 14.2 17.475 13.8 17.175C12.8 16.375 11.4 16.375 10.3 17.175C9.89999 17.475 9.70001 18.075 10.1 18.575C10.4 18.975 11 19.175 11.5 18.775C11.8 18.575 12.3 18.575 12.7 18.775C12.9 18.875 13.1 18.975 13.3 18.975C13.5 18.975 13.8 18.775 14 18.575ZM16.3 15.275C16.6 14.875 16.5 14.175 16.1 13.875C13.7 12.175 10.3 12.175 8 13.875C7.6 14.175 7.39999 14.775 7.79999 15.275C8.19999 15.775 8.70001 15.875 9.20001 15.475C10.9 14.275 13.3 14.275 15 15.475C15.2 15.575 15.4 15.675 15.6 15.675C15.8 15.675 16.1 15.575 16.3 15.275Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                    <!--end::Svg Icon-->
+                </a>
+            </div>
+            
+        </div>
+        <!--end::Client-->
+        <!--begin::Client-->
+        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="الشكاوي">
+            <div class="">
+                <a id="dv_referral" href="https://sehatty.ps/create_complaint">
+                    <!--begin::Svg Icon | path: assets/media/icons/duotune/general/gen046.svg-->
+                    <span class="svg-icon svg-icon-danger svg-icon-3x">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none">
+                            <rect opacity="0.3" x="2" y="2" width="20" height="20" rx="10"
+                                fill="black" />
+                            <path
+                                d="M11.276 13.654C11.276 13.2713 11.3367 12.9447 11.458 12.674C11.5887 12.394 11.738 12.1653 11.906 11.988C12.0833 11.8107 12.3167 11.61 12.606 11.386C12.942 11.1247 13.1893 10.896 13.348 10.7C13.5067 10.4947 13.586 10.2427 13.586 9.944C13.586 9.636 13.4833 9.356 13.278 9.104C13.082 8.84267 12.69 8.712 12.102 8.712C11.486 8.712 11.066 8.866 10.842 9.174C10.6273 9.482 10.52 9.82267 10.52 10.196L10.534 10.574H8.826C8.78867 10.3967 8.77 10.2333 8.77 10.084C8.77 9.552 8.90067 9.07133 9.162 8.642C9.42333 8.20333 9.81067 7.858 10.324 7.606C10.8467 7.354 11.4813 7.228 12.228 7.228C13.1987 7.228 13.9687 7.44733 14.538 7.886C15.1073 8.31533 15.392 8.92667 15.392 9.72C15.392 10.168 15.322 10.5507 15.182 10.868C15.042 11.1853 14.874 11.442 14.678 11.638C14.482 11.834 14.2253 12.0533 13.908 12.296C13.544 12.576 13.2733 12.8233 13.096 13.038C12.928 13.2527 12.844 13.528 12.844 13.864V14.326H11.276V13.654ZM11.192 15.222H12.928V17H11.192V15.222Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                </a>
+                <!--end::Svg Icon-->
+            </div>
+            
+        </div>
+        <!--end::Client-->
+        <!--begin::Client-->
+        <div class="d-flex flex-center m-3 m-md-6" data-bs-toggle="tooltip" title="طلب افادة">
+            <div class="">
+                <a id="dv_referral" href="https://sehatty.ps/emp/login">
+                    <span class="svg-icon svg-icon-primary svg-icon-3x"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path opacity="0.3"
+                                d="M10.3 14.3L11 13.6L7.70002 10.3C7.30002 9.9 6.7 9.9 6.3 10.3C5.9 10.7 5.9 11.3 6.3 11.7L10.3 15.7C9.9 15.3 9.9 14.7 10.3 14.3Z"
+                                fill="black" />
+                            <path
+                                d="M22 12C22 17.5 17.5 22 12 22C6.5 22 2 17.5 2 12C2 6.5 6.5 2 12 2C17.5 2 22 6.5 22 12ZM11.7 15.7L17.7 9.70001C18.1 9.30001 18.1 8.69999 17.7 8.29999C17.3 7.89999 16.7 7.89999 16.3 8.29999L11 13.6L7.70001 10.3C7.30001 9.89999 6.69999 9.89999 6.29999 10.3C5.89999 10.7 5.89999 11.3 6.29999 11.7L10.3 15.7C10.5 15.9 10.8 16 11 16C11.2 16 11.5 15.9 11.7 15.7Z"
+                                fill="black" />
+                        </svg>
+                    </span>
+                    <!--end::Svg Icon-->
+                </a>
+                <!--end::Svg Icon-->
+
+            </div>
+        </div>
+        <!--end::Client-->
+    </div>
+    <!--end::Clients-->
+</div>
+
+
+
+<!-- Modal XL -->
+<!-- مودال كبير XL -->
+<div class="modal fade" id="importantModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen-lg-down">
+        <div class="modal-content">
+
+            <div class="modal-header bg-light text-white">
+                <h5 class="modal-title fw-bold">
+                    إعلان هام - متطلبات الحصول على إجازة مزاولة المهنة
+                </h5>
+                <button type="button" class="btn-close btn-close-primary" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body p-5">
+
+                <div class="card shadow-sm border-0 mb-10">
+    <div class="card-body p-10">
+        <div class="text-center mb-10">
+            <img src="assets/reports_logo.jpg" alt="وزارة الصحة" class="mb-4" style="height: 80px;">
+            <h1 class="fw-bold text-primary mb-2">🇵🇸 وزارة الصحة الفلسطينية - غزة 🇵🇸</h1>
+            <h3 class="text-danger fw-semibold"><i class="bi bi-megaphone-fill"></i> إعلان هام صادر عن وزارة الصحة</h3>
+        </div>
+
+        <div class="bg-light rounded-4 shadow-sm p-8 mb-10">
+
+            <p class="fs-5 text-gray-700 lh-lg text-justify mb-5">
+                تُعلن <span class="fw-bold text-primary">وحدة الطب الخاص</span> عن المتطلبات اللازمة للحصول على 
+                <span class="fw-bold text-dark">إجازة مزاولة المهنة</span>، وذلك على النحو التالي:
+            </p>
+
+            <!-- القسم الأول -->
+            <div class="mb-7">
+                <h4 class="fw-bold text-primary mb-3">أولًا: إجازة مزاولة المهنة المؤقتة</h4>
+                <ul class="fs-5 text-gray-700 lh-lg">
+                    <li>صورة عن الشهادة الجامعية أو إفادة تخرّج.</li>
+                    <li>صورة عن إفادة التدريب (الامتياز)، لمن يلزمه ذلك.</li>
+                    <li>صورة عن الهوية الشخصية.</li>
+                    <li>اجتياز امتحان مزاولة المهنة، لمن يلزمه.</li>
+                </ul>
+            </div>
+
+            <!-- القسم الثاني -->
+            <div class="mb-7">
+                <h4 class="fw-bold text-primary mb-3">ثانيًا: إجازة مزاولة المهنة الدائمة</h4>
+                <ul class="fs-5 text-gray-700 lh-lg">
+                    <li>الشهادة الجامعية مصدّقة حسب الأصول.</li>
+                    <li>صورة عن إفادة التدريب (الامتياز)، لمن يلزمه ذلك.</li>
+                    <li>صورة عن إفادة معادلة الشهادة، لخريجي الجامعات الأجنبية.</li>
+                    <li>صورة عن الهوية الشخصية.</li>
+                    <li>اجتياز امتحان مزاولة المهنة، لمن يلزمه.</li>
+                </ul>
+            </div>
+
+            <!-- تنويه -->
+            <div class="alert alert-warning border-dashed border-warning py-4 px-6 mb-6">
+                <i class="bi bi-info-circle fs-3 text-warning me-2"></i>
+                <strong>تنويه:</strong> 
+                نُعلمكم أنه اعتبارًا من يوم 
+                <span class="fw-bold">الأربعاء الموافق 10/12/2025</span> 
+                سيبدأ تقديم الطلبات والتوجه إلى مكتب الطب الخاص في كل من:
+                <br>
+                <span class="fw-bold">☑ مستشفى العيون</span> – 
+                <span class="fw-bold">☑ مجمع ناصر الطبي</span>
+                <br>
+                (الإدارة العامة لتنمية القوى البشرية)
+            </div>
+
+        </div>
+
+        <div class="text-center mt-10">
+            <div class="fs-5 fw-semibold text-gray-600">وزارة الصحة الفلسطينية</div>
+            <div class="text-muted fs-6">📅 2026/07/30</div>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+                <!--end::Landing hero-->
+            </div>
+            <!--end::Wrapper-->
+            <!--begin::Curve bottom-->
+            <div class="landing-curve landing-dark-color mb-10 mb-lg-20">
+                <svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="currentColor"></path>
+                </svg>
+            </div>
+            <!--end::Curve bottom-->
+        </div>
+
+        <div class="iframe-wrapper bg-light">
+    <div class="iframe-container">
+        <iframe 
+                    title="Cumulative Statistics Dashboard 100520255" width="600" height="373.5" 
+                    src="https://app.powerbi.com/view?r=eyJrIjoiOGZlYTNjZDktNjA3Mi00NDI1LWI0ZDctYWVlMzQ4MGUyMGM2IiwidCI6IjcxNmE0NmIwLTgzZTEtNDM3My04YTM3LWUxNjQ3OTg3ZmI4ZCIsImMiOjEwfQ%3D%3D" 
+                    frameborder="0" allowFullScreen="true">
+                    </iframe>
+    </div>
+</div>
+
+<style>
+    .iframe-wrapper {
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        height: 100vh;
+        /* Full screen height */
+        /* Background color */
+    }
+
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        max-width: 1050px;
+        height: 500px;
+        background: linear-gradient(to right, #2c3e50, #4ca1af);
+        /* Gradient Background */
+        padding: 3px;
+        /* Add padding around iframe */
+        border-radius: 10px;
+        /* Optional rounded corners */
+    }
+
+    .iframe-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: white;
+        /* Ensures the iframe doesn't have a transparent background */
+    }
+
+</style>
+
+<script>
+    function loadIframe() {
+        document.getElementById('iframe-container').innerHTML = `
+                    <iframe 
+                    title="Cumulative Statistics Dashboard 100520255" width="600" height="373.5" 
+                    src="https://app.powerbi.com/view?r=eyJrIjoiNDE0MDg0NDMtODM1NC00NjMzLTljZDUtYzEyNTBkNWRkYjQ3IiwidCI6IjcxNmE0NmIwLTgzZTEtNDM3My04YTM3LWUxNjQ3OTg3ZmI4ZCIsImMiOjEwfQ%3D%3D" 
+                    frameborder="0" allowFullScreen="true">
+                    </iframe>
+                `;
+    }
+
+</script>
+
+        <!--end::Header Section-->
+        <!--begin::How It Works Section-->
+        <div style="margin-top:40px" class="mb-n10 mb-lg-n20 z-index-2">
+    <!--begin::Container-->
+    <div class="container">
+
+        <!--begin::Heading-->
+        
+        <!--end::Heading-->
+        <!--begin::Row-->
+        <div class="text-center mb-5">
+            <h3 class="fs-1hx text-dark mb-5 main-title" id="electronic-services"
+                data-kt-scroll-offset="{default: 100, lg: 150}">خدمات الموظفين</h6>
+        </div>
+        <div class="row">
+            <!--begin::Col-->
+            
+            <!--end::Col-->
+            <div id="public-services" class="services" id="services">
+                <div class="container">
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-primary svg-icon-5x"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M16.0173 9H15.3945C14.2833 9 13.263 9.61425 12.7431 10.5963L12.154 11.7091C12.0645 11.8781 12.1072 12.0868 12.2559 12.2071L12.6402 12.5183C13.2631 13.0225 13.7556 13.6691 14.0764 14.4035L14.2321 14.7601C14.2957 14.9058 14.4396 15 14.5987 15H18.6747C19.7297 15 20.4057 13.8774 19.912 12.945L18.6686 10.5963C18.1487 9.61425 17.1285 9 16.0173 9Z"
+                                                fill="black" />
+                                            <rect opacity="0.3" x="14" y="4" width="4" height="4"
+                                                rx="2" fill="black" />
+                                            <path
+                                                d="M4.65486 14.8559C5.40389 13.1224 7.11161 12 9 12C10.8884 12 12.5961 13.1224 13.3451 14.8559L14.793 18.2067C15.3636 19.5271 14.3955 21 12.9571 21H5.04292C3.60453 21 2.63644 19.5271 3.20698 18.2067L4.65486 14.8559Z"
+                                                fill="black" />
+                                            <rect opacity="0.3" x="6" y="5" width="6" height="6"
+                                                rx="3" fill="black" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"> <a href="https://sehatty.ps/emp/login">اغاثة الموظفين </a></h3>
+                        <div class="info">
+                            <a style="font-family:Poppins" href="https://sehatty.ps/emp/login">Employee Aid</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-warning svg-icon-5x">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path opacity="0.5"
+                                                d="M12.8956 13.4982L10.7949 11.2651C10.2697 10.7068 9.38251 10.7068 8.85731 11.2651C8.37559 11.7772 8.37559 12.5757 8.85731 13.0878L12.7499 17.2257C13.1448 17.6455 13.8118 17.6455 14.2066 17.2257L21.1427 9.85252C21.6244 9.34044 21.6244 8.54191 21.1427 8.02984C20.6175 7.47154 19.7303 7.47154 19.2051 8.02984L14.061 13.4982C13.7451 13.834 13.2115 13.834 12.8956 13.4982Z"
+                                                fill="black"></path>
+                                            <path
+                                                d="M7.89557 13.4982L5.79487 11.2651C5.26967 10.7068 4.38251 10.7068 3.85731 11.2651C3.37559 11.7772 3.37559 12.5757 3.85731 13.0878L7.74989 17.2257C8.14476 17.6455 8.81176 17.6455 9.20663 17.2257L16.1427 9.85252C16.6244 9.34044 16.6244 8.54191 16.1427 8.02984C15.6175 7.47154 14.7303 7.47154 14.2051 8.02984L9.06096 13.4982C8.74506 13.834 8.21146 13.834 7.89557 13.4982Z"
+                                                fill="black"></path>
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="http://pub.sehatty.ps/hrd/public/student_query">افادة امتياز</a>
+                        </h3>
+                        <div class="info">
+                            <a style="font-family:Poppins"
+                                href="http://pub.sehatty.ps/hrd/public/student_query">Internship training</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-5x svg-icon-info">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path opacity="0.3"
+                                                d="M21.6 11.2L19.3 8.89998V5.59993C19.3 4.99993 18.9 4.59993 18.3 4.59993H14.9L12.6 2.3C12.2 1.9 11.6 1.9 11.2 2.3L8.9 4.59993H5.6C5 4.59993 4.6 4.99993 4.6 5.59993V8.89998L2.3 11.2C1.9 11.6 1.9 12.1999 2.3 12.5999L4.6 14.9V18.2C4.6 18.8 5 19.2 5.6 19.2H8.9L11.2 21.5C11.6 21.9 12.2 21.9 12.6 21.5L14.9 19.2H18.2C18.8 19.2 19.2 18.8 19.2 18.2V14.9L21.5 12.5999C22 12.1999 22 11.6 21.6 11.2Z"
+                                                fill="black"></path>
+                                            <path
+                                                d="M11.3 9.40002C11.3 10.2 11.1 10.9 10.7 11.3C10.3 11.7 9.8 11.9 9.2 11.9C8.8 11.9 8.40001 11.8 8.10001 11.6C7.80001 11.4 7.50001 11.2 7.40001 10.8C7.20001 10.4 7.10001 10 7.10001 9.40002C7.10001 8.80002 7.20001 8.4 7.30001 8C7.40001 7.6 7.7 7.29998 8 7.09998C8.3 6.89998 8.7 6.80005 9.2 6.80005C9.5 6.80005 9.80001 6.9 10.1 7C10.4 7.1 10.6 7.3 10.8 7.5C11 7.7 11.1 8.00005 11.2 8.30005C11.3 8.60005 11.3 9.00002 11.3 9.40002ZM10.1 9.40002C10.1 8.80002 10 8.39998 9.90001 8.09998C9.80001 7.79998 9.6 7.70007 9.2 7.70007C9 7.70007 8.8 7.80002 8.7 7.90002C8.6 8.00002 8.50001 8.2 8.40001 8.5C8.40001 8.7 8.30001 9.10002 8.30001 9.40002C8.30001 9.80002 8.30001 10.1 8.40001 10.4C8.40001 10.6 8.5 10.8 8.7 11C8.8 11.1 9 11.2001 9.2 11.2001C9.5 11.2001 9.70001 11.1 9.90001 10.8C10 10.4 10.1 10 10.1 9.40002ZM14.9 7.80005L9.40001 16.7001C9.30001 16.9001 9.10001 17.1 8.90001 17.1C8.80001 17.1 8.70001 17.1 8.60001 17C8.50001 16.9 8.40001 16.8001 8.40001 16.7001C8.40001 16.6001 8.4 16.5 8.5 16.4L14 7.5C14.1 7.3 14.2 7.19998 14.3 7.09998C14.4 6.99998 14.5 7 14.6 7C14.7 7 14.8 6.99998 14.9 7.09998C15 7.19998 15 7.30002 15 7.40002C15.2 7.30002 15.1 7.50005 14.9 7.80005ZM16.6 14.2001C16.6 15.0001 16.4 15.7 16 16.1C15.6 16.5 15.1 16.7001 14.5 16.7001C14.1 16.7001 13.7 16.6 13.4 16.4C13.1 16.2 12.8 16 12.7 15.6C12.5 15.2 12.4 14.8001 12.4 14.2001C12.4 13.3001 12.6 12.7 12.9 12.3C13.2 11.9 13.7 11.7001 14.5 11.7001C14.8 11.7001 15.1 11.8 15.4 11.9C15.7 12 15.9 12.2 16.1 12.4C16.3 12.6 16.4 12.9001 16.5 13.2001C16.6 13.4001 16.6 13.8001 16.6 14.2001ZM15.4 14.1C15.4 13.5 15.3 13.1 15.2 12.9C15.1 12.6 14.9 12.5 14.5 12.5C14.3 12.5 14.1 12.6001 14 12.7001C13.9 12.8001 13.8 13.0001 13.7 13.2001C13.6 13.4001 13.6 13.8 13.6 14.1C13.6 14.7 13.7 15.1 13.8 15.4C13.9 15.7 14.1 15.8 14.5 15.8C14.8 15.8 15 15.7 15.2 15.4C15.3 15.2 15.4 14.7 15.4 14.1Z"
+                                                fill="black"></path>
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="https://sehatty.ps/martyrs_form">الشهداء والاسرى موظفي وزارة الصحة</a>
+                        </h3>
+                        <div class="info">
+                            <a style="font-family:Poppins" href="https://sehatty.ps/martyrs_form">Reporting martyrs</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+        <!--end::Row-->
+        <div class="text-center mb-5">
+            <h3 class="fs-1hx text-dark mb-5 main-title" id="electronic-services"
+                data-kt-scroll-offset="{default: 100, lg: 150}">خدمات المواطنين</h5>
+        </div>
+        <div class="row mb-10">
+            <div id="public-services" class="services" id="services">
+                <div class="container">
+
+
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-5x svg-icon-danger">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path opacity="0.3"
+                                                d="M11 3C11 3.6 10.6 4 10 4V9H4H5C5.6 9 6 8.6 6 8C6 7.4 5.6 7 5 7H4V4C3.4 4 3 3.6 3 3C3 2.4 3.4 2 4 2H10C10.6 2 11 2.4 11 3ZM20 2H14C13.4 2 13 2.4 13 3C13 3.6 13.4 4 14 4V7H15C15.6 7 16 7.4 16 8C16 8.6 15.6 9 15 9H14V12H15C15.6 12 16 12.4 16 13C16 13.6 15.6 14 15 14H14H20V4C20.6 4 21 3.6 21 3C21 2.4 20.6 2 20 2Z"
+                                                fill="black"></path>
+                                            <path
+                                                d="M10 9V19C10 20.7 8.7 22 7 22C5.3 22 4 20.7 4 19H5C5.6 19 6 18.6 6 18C6 17.4 5.6 17 5 17H4V14H5C5.6 14 6 13.6 6 13C6 12.4 5.6 12 5 12H4V9H10ZM14 14V17H15C15.6 17 16 17.4 16 18C16 18.6 15.6 19 15 19H14C14 20.7 15.3 22 17 22C18.7 22 20 20.7 20 19V14H14Z"
+                                                fill="black"></path>
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="https://sehatty.ps/patient_form">حصر حالات البتر و الشلل</a>
+                        </h3>
+                        <div class="info">
+                            <a style="font-family:Poppins" href="https://sehatty.ps/patient_form">Amputation and
+                                spinle
+                                injueries</a>
+                        </div>
+                    </div>
+
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-5x svg-icon-success">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path opacity="0.3"
+                                                d="M21.6 11.2L19.3 8.89998V5.59993C19.3 4.99993 18.9 4.59993 18.3 4.59993H14.9L12.6 2.3C12.2 1.9 11.6 1.9 11.2 2.3L8.9 4.59993H5.6C5 4.59993 4.6 4.99993 4.6 5.59993V8.89998L2.3 11.2C1.9 11.6 1.9 12.1999 2.3 12.5999L4.6 14.9V18.2C4.6 18.8 5 19.2 5.6 19.2H8.9L11.2 21.5C11.6 21.9 12.2 21.9 12.6 21.5L14.9 19.2H18.2C18.8 19.2 19.2 18.8 19.2 18.2V14.9L21.5 12.5999C22 12.1999 22 11.6 21.6 11.2Z"
+                                                fill="black"></path>
+                                            <path
+                                                d="M11.3 9.40002C11.3 10.2 11.1 10.9 10.7 11.3C10.3 11.7 9.8 11.9 9.2 11.9C8.8 11.9 8.40001 11.8 8.10001 11.6C7.80001 11.4 7.50001 11.2 7.40001 10.8C7.20001 10.4 7.10001 10 7.10001 9.40002C7.10001 8.80002 7.20001 8.4 7.30001 8C7.40001 7.6 7.7 7.29998 8 7.09998C8.3 6.89998 8.7 6.80005 9.2 6.80005C9.5 6.80005 9.80001 6.9 10.1 7C10.4 7.1 10.6 7.3 10.8 7.5C11 7.7 11.1 8.00005 11.2 8.30005C11.3 8.60005 11.3 9.00002 11.3 9.40002ZM10.1 9.40002C10.1 8.80002 10 8.39998 9.90001 8.09998C9.80001 7.79998 9.6 7.70007 9.2 7.70007C9 7.70007 8.8 7.80002 8.7 7.90002C8.6 8.00002 8.50001 8.2 8.40001 8.5C8.40001 8.7 8.30001 9.10002 8.30001 9.40002C8.30001 9.80002 8.30001 10.1 8.40001 10.4C8.40001 10.6 8.5 10.8 8.7 11C8.8 11.1 9 11.2001 9.2 11.2001C9.5 11.2001 9.70001 11.1 9.90001 10.8C10 10.4 10.1 10 10.1 9.40002ZM14.9 7.80005L9.40001 16.7001C9.30001 16.9001 9.10001 17.1 8.90001 17.1C8.80001 17.1 8.70001 17.1 8.60001 17C8.50001 16.9 8.40001 16.8001 8.40001 16.7001C8.40001 16.6001 8.4 16.5 8.5 16.4L14 7.5C14.1 7.3 14.2 7.19998 14.3 7.09998C14.4 6.99998 14.5 7 14.6 7C14.7 7 14.8 6.99998 14.9 7.09998C15 7.19998 15 7.30002 15 7.40002C15.2 7.30002 15.1 7.50005 14.9 7.80005ZM16.6 14.2001C16.6 15.0001 16.4 15.7 16 16.1C15.6 16.5 15.1 16.7001 14.5 16.7001C14.1 16.7001 13.7 16.6 13.4 16.4C13.1 16.2 12.8 16 12.7 15.6C12.5 15.2 12.4 14.8001 12.4 14.2001C12.4 13.3001 12.6 12.7 12.9 12.3C13.2 11.9 13.7 11.7001 14.5 11.7001C14.8 11.7001 15.1 11.8 15.4 11.9C15.7 12 15.9 12.2 16.1 12.4C16.3 12.6 16.4 12.9001 16.5 13.2001C16.6 13.4001 16.6 13.8001 16.6 14.2001ZM15.4 14.1C15.4 13.5 15.3 13.1 15.2 12.9C15.1 12.6 14.9 12.5 14.5 12.5C14.3 12.5 14.1 12.6001 14 12.7001C13.9 12.8001 13.8 13.0001 13.7 13.2001C13.6 13.4001 13.6 13.8 13.6 14.1C13.6 14.7 13.7 15.1 13.8 15.4C13.9 15.7 14.1 15.8 14.5 15.8C14.8 15.8 15 15.7 15.2 15.4C15.3 15.2 15.4 14.7 15.4 14.1Z"
+                                                fill="black"></path>
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="https://sehatty.ps/moh-registration/public/add-order">التبليغ عن
+                                الشهداء والمفقودين</a></h3>
+                        <div class="info">
+                            <a style="font-family:Poppins"
+                                href="https://sehatty.ps/moh-registration/public/add-order">Reporting martyrs</a>
+                        </div>
+                    </div>
+
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-primary svg-icon-5x"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path opacity="0.3"
+                                                d="M12.025 4.725C9.725 2.425 6.025 2.425 3.725 4.725C1.425 7.025 1.425 10.725 3.725 13.025L11.325 20.625C11.725 21.025 12.325 21.025 12.725 20.625L20.325 13.025C22.625 10.725 22.625 7.025 20.325 4.725C18.025 2.425 14.325 2.425 12.025 4.725Z"
+                                                fill="black" />
+                                            <path
+                                                d="M14.025 17.125H13.925C13.525 17.025 13.125 16.725 13.025 16.325L11.925 11.125L11.025 14.325C10.925 14.725 10.625 15.025 10.225 15.025C9.825 15.125 9.425 14.925 9.225 14.625L7.725 12.325L6.525 12.925C6.425 13.025 6.225 13.025 6.125 13.025H3.125C2.525 13.025 2.125 12.625 2.125 12.025C2.125 11.425 2.525 11.025 3.125 11.025H5.925L7.725 10.125C8.225 9.925 8.725 10.025 9.025 10.425L9.825 11.625L11.225 6.72498C11.325 6.32498 11.725 6.02502 12.225 6.02502C12.725 6.02502 13.025 6.32495 13.125 6.82495L14.525 13.025L15.225 11.525C15.425 11.225 15.725 10.925 16.125 10.925H21.125C21.725 10.925 22.125 11.325 22.125 11.925C22.125 12.525 21.725 12.925 21.125 12.925H16.725L15.025 16.325C14.725 16.925 14.425 17.125 14.025 17.125Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="/citizen/citizen/referral/">التحويلات الطبية</a></h3>
+                        <div class="info">
+                            <a style="font-family:Poppins" href="/citizen/citizen/referral/">Medical Referral</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-warning svg-icon-5x">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path opacity="0.3"
+                                                d="M11.425 7.325C12.925 5.825 15.225 5.825 16.725 7.325C18.225 8.825 18.225 11.125 16.725 12.625C15.225 14.125 12.925 14.125 11.425 12.625C9.92501 11.225 9.92501 8.825 11.425 7.325ZM8.42501 4.325C5.32501 7.425 5.32501 12.525 8.42501 15.625C11.525 18.725 16.625 18.725 19.725 15.625C22.825 12.525 22.825 7.425 19.725 4.325C16.525 1.225 11.525 1.225 8.42501 4.325Z"
+                                                fill="black" />
+                                            <path
+                                                d="M11.325 17.525C10.025 18.025 8.425 17.725 7.325 16.725C5.825 15.225 5.825 12.925 7.325 11.425C8.825 9.92498 11.125 9.92498 12.625 11.425C13.225 12.025 13.625 12.925 13.725 13.725C14.825 13.825 15.925 13.525 16.725 12.625C17.125 12.225 17.425 11.825 17.525 11.325C17.125 10.225 16.525 9.22498 15.625 8.42498C12.525 5.32498 7.425 5.32498 4.325 8.42498C1.225 11.525 1.225 16.625 4.325 19.725C7.425 22.825 12.525 22.825 15.625 19.725C16.325 19.025 16.925 18.225 17.225 17.325C15.425 18.125 13.225 18.225 11.325 17.525Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="https://sehatty.ps/martyrs_register_form">التبليغ عن الجثث المدفونة
+                            </a>
+                        </h3>
+                        <div class="info">
+                            <a style="font-family:Poppins" href="https://sehatty.ps/martyrs_register_form">Reporting
+                                buried
+                                bodies</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-info svg-icon-5x">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <rect opacity="0.3" x="2" y="2" width="20" height="20"
+                                                rx="10" fill="black" />
+                                            <path
+                                                d="M11.276 13.654C11.276 13.2713 11.3367 12.9447 11.458 12.674C11.5887 12.394 11.738 12.1653 11.906 11.988C12.0833 11.8107 12.3167 11.61 12.606 11.386C12.942 11.1247 13.1893 10.896 13.348 10.7C13.5067 10.4947 13.586 10.2427 13.586 9.944C13.586 9.636 13.4833 9.356 13.278 9.104C13.082 8.84267 12.69 8.712 12.102 8.712C11.486 8.712 11.066 8.866 10.842 9.174C10.6273 9.482 10.52 9.82267 10.52 10.196L10.534 10.574H8.826C8.78867 10.3967 8.77 10.2333 8.77 10.084C8.77 9.552 8.90067 9.07133 9.162 8.642C9.42333 8.20333 9.81067 7.858 10.324 7.606C10.8467 7.354 11.4813 7.228 12.228 7.228C13.1987 7.228 13.9687 7.44733 14.538 7.886C15.1073 8.31533 15.392 8.92667 15.392 9.72C15.392 10.168 15.322 10.5507 15.182 10.868C15.042 11.1853 14.874 11.442 14.678 11.638C14.482 11.834 14.2253 12.0533 13.908 12.296C13.544 12.576 13.2733 12.8233 13.096 13.038C12.928 13.2527 12.844 13.528 12.844 13.864V14.326H11.276V13.654ZM11.192 15.222H12.928V17H11.192V15.222Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="https://sehatty.ps/public/check_dead_data">فحص اشعار الوفاة</a></h3>
+                        <div class="info">
+                            <a style="font-family:Poppins" href="https://sehatty.ps/public/check_dead_data">Check Death</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-danger svg-icon-5x">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M11.2166 8.50002L10.5166 7.80007C10.1166 7.40007 10.1166 6.80005 10.5166 6.40005L13.4166 3.50002C15.5166 1.40002 18.9166 1.50005 20.8166 3.90005C22.5166 5.90005 22.2166 8.90007 20.3166 10.8001L17.5166 13.6C17.1166 14 16.5166 14 16.1166 13.6L15.4166 12.9C15.0166 12.5 15.0166 11.9 15.4166 11.5L18.3166 8.6C19.2166 7.7 19.1166 6.30002 18.0166 5.50002C17.2166 4.90002 16.0166 5.10007 15.3166 5.80007L12.4166 8.69997C12.2166 8.89997 11.6166 8.90002 11.2166 8.50002ZM11.2166 15.6L8.51659 18.3001C7.81659 19.0001 6.71658 19.2 5.81658 18.6C4.81658 17.9 4.71659 16.4 5.51659 15.5L8.31658 12.7C8.71658 12.3 8.71658 11.7001 8.31658 11.3001L7.6166 10.6C7.2166 10.2 6.6166 10.2 6.2166 10.6L3.6166 13.2C1.7166 15.1 1.4166 18.1 3.1166 20.1C5.0166 22.4 8.51659 22.5 10.5166 20.5L13.3166 17.7C13.7166 17.3 13.7166 16.7001 13.3166 16.3001L12.6166 15.6C12.3166 15.2 11.6166 15.2 11.2166 15.6Z"
+                                                fill="black" />
+                                            <path opacity="0.3"
+                                                d="M5.0166 9L2.81659 8.40002C2.31659 8.30002 2.0166 7.79995 2.1166 7.19995L2.31659 5.90002C2.41659 5.20002 3.21659 4.89995 3.81659 5.19995L6.0166 6.40002C6.4166 6.60002 6.6166 7.09998 6.5166 7.59998L6.31659 8.30005C6.11659 8.80005 5.5166 9.1 5.0166 9ZM8.41659 5.69995H8.6166C9.1166 5.69995 9.5166 5.30005 9.5166 4.80005L9.6166 3.09998C9.6166 2.49998 9.2166 2 8.5166 2H7.81659C7.21659 2 6.71659 2.59995 6.91659 3.19995L7.31659 4.90002C7.41659 5.40002 7.91659 5.69995 8.41659 5.69995ZM14.6166 18.2L15.1166 21.3C15.2166 21.8 15.7166 22.2 16.2166 22L17.6166 21.6C18.1166 21.4 18.4166 20.8 18.1166 20.3L16.7166 17.5C16.5166 17.1 16.1166 16.9 15.7166 17L15.2166 17.1C14.8166 17.3 14.5166 17.7 14.6166 18.2ZM18.4166 16.3L19.8166 17.2C20.2166 17.5 20.8166 17.3 21.0166 16.8L21.3166 15.9C21.5166 15.4 21.1166 14.8 20.5166 14.8H18.8166C18.0166 14.8 17.7166 15.9 18.4166 16.3Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="/citizen/login/">تحديث بيانات الجرحى(الكسور المعقدة)</a></h3>
+                        <div class="info">
+                            <a style="font-family:Poppins"
+                                href="/citizen/login/">Register Injuries</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-success svg-icon-5x">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M16.95 18.9688C16.75 18.9688 16.55 18.8688 16.35 18.7688C15.85 18.4688 15.75 17.8688 16.05 17.3688L19.65 11.9688L16.05 6.56876C15.75 6.06876 15.85 5.46873 16.35 5.16873C16.85 4.86873 17.45 4.96878 17.75 5.46878L21.75 11.4688C21.95 11.7688 21.95 12.2688 21.75 12.5688L17.75 18.5688C17.55 18.7688 17.25 18.9688 16.95 18.9688ZM7.55001 18.7688C8.05001 18.4688 8.15 17.8688 7.85 17.3688L4.25001 11.9688L7.85 6.56876C8.15 6.06876 8.05001 5.46873 7.55001 5.16873C7.05001 4.86873 6.45 4.96878 6.15 5.46878L2.15 11.4688C1.95 11.7688 1.95 12.2688 2.15 12.5688L6.15 18.5688C6.35 18.8688 6.65 18.9688 6.95 18.9688C7.15 18.9688 7.35001 18.8688 7.55001 18.7688Z"
+                                                fill="black" />
+                                            <path opacity="0.3"
+                                                d="M10.45 18.9687C10.35 18.9687 10.25 18.9687 10.25 18.9687C9.75 18.8687 9.35 18.2688 9.55 17.7688L12.55 5.76878C12.65 5.26878 13.25 4.8687 13.75 5.0687C14.25 5.1687 14.65 5.76878 14.45 6.26878L11.45 18.2688C11.35 18.6688 10.85 18.9687 10.45 18.9687Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="https://forms.sehatty.ps/public/martyrs-list">
+                                التعرف على الجثث</a></h3>
+                        <div class="info">
+                            <a style="font-family:Poppins" href="https://forms.sehatty.ps/public/martyrs-list">Martyrs
+                                List</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-primary svg-icon-5x">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path opacity="0.3"
+                                                d="M11.425 7.325C12.925 5.825 15.225 5.825 16.725 7.325C18.225 8.825 18.225 11.125 16.725 12.625C15.225 14.125 12.925 14.125 11.425 12.625C9.92501 11.225 9.92501 8.825 11.425 7.325ZM8.42501 4.325C5.32501 7.425 5.32501 12.525 8.42501 15.625C11.525 18.725 16.625 18.725 19.725 15.625C22.825 12.525 22.825 7.425 19.725 4.325C16.525 1.225 11.525 1.225 8.42501 4.325Z"
+                                                fill="black" />
+                                            <path
+                                                d="M11.325 17.525C10.025 18.025 8.425 17.725 7.325 16.725C5.825 15.225 5.825 12.925 7.325 11.425C8.825 9.92498 11.125 9.92498 12.625 11.425C13.225 12.025 13.625 12.925 13.725 13.725C14.825 13.825 15.925 13.525 16.725 12.625C17.125 12.225 17.425 11.825 17.525 11.325C17.125 10.225 16.525 9.22498 15.625 8.42498C12.525 5.32498 7.425 5.32498 4.325 8.42498C1.225 11.525 1.225 16.625 4.325 19.725C7.425 22.825 12.525 22.825 15.625 19.725C16.325 19.025 16.925 18.225 17.225 17.325C15.425 18.125 13.225 18.225 11.325 17.525Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="https://sehatty.ps/moh-registration/public/IndirectDeaths"
+                                target="_blank">
+                                الوفيات الغير مباشرة</a></h3>
+                        <div class="info">
+                            <a style="font-family:Poppins"
+                                href="https://sehatty.ps/moh-registration/public/IndirectDeaths"
+                                target="_blank">Indirect Death</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-warning svg-icon-5x">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M10.613 16.163L7.837 13.387C7.65313 13.203 7.54983 12.9536 7.54983 12.6935C7.54983 12.4334 7.65313 12.184 7.837 12L14.775 5.06201C14.9589 4.87814 15.2084 4.7749 15.4685 4.7749C15.7286 4.7749 15.978 4.87814 16.162 5.06201L18.938 7.83801C19.1219 8.02197 19.2252 8.2714 19.2252 8.53149C19.2252 8.79159 19.1219 9.04102 18.938 9.22498L12 16.163C11.816 16.3468 11.5666 16.4502 11.3065 16.4502C11.0464 16.4502 10.797 16.3468 10.613 16.163ZM4.71301 17.203L2.48498 20.322C2.3675 20.4863 2.31218 20.687 2.32879 20.8883C2.3454 21.0896 2.43288 21.2784 2.57571 21.4213C2.71853 21.5641 2.90743 21.6516 3.10873 21.6682C3.31003 21.6848 3.51067 21.6294 3.67498 21.512L6.794 19.2841L4.71301 17.203Z"
+                                                fill="black" />
+                                            <path opacity="0.3"
+                                                d="M7.83701 12L2.28699 6.44995C2.10306 6.26582 1.99976 6.01624 1.99976 5.75598C1.99976 5.49572 2.10306 5.24614 2.28699 5.06201L5.06201 2.28699C5.24614 2.10306 5.49575 1.99976 5.75601 1.99976C6.01627 1.99976 6.26588 2.10306 6.45001 2.28699L12 7.83704L7.83701 12ZM18.937 21.713L21.712 18.938C21.8959 18.7539 21.9992 18.5043 21.9992 18.244C21.9992 17.9838 21.8959 17.7342 21.712 17.55L16.162 12L12 16.163L17.55 21.713C17.7341 21.8969 17.9837 22.0002 18.244 22.0002C18.5042 22.0002 18.7539 21.8969 18.938 21.713H18.937ZM9.146 21.634C9.25064 21.7386 9.37833 21.8172 9.51883 21.8636C9.65933 21.9101 9.80874 21.923 9.95511 21.9014C10.1015 21.8797 10.2407 21.824 10.3618 21.7389C10.4828 21.6537 10.5822 21.5415 10.652 21.411C11.0778 20.2848 11.1695 19.0596 10.9161 17.8826C10.6628 16.7055 10.0752 15.6265 9.22385 14.7751C8.37248 13.9238 7.29352 13.3362 6.11646 13.0829C4.93939 12.8296 3.71424 12.9213 2.58801 13.347C2.45756 13.4169 2.34528 13.5162 2.26013 13.6372C2.17499 13.7582 2.11933 13.8976 2.09766 14.0439C2.07598 14.1903 2.08889 14.3397 2.13531 14.4802C2.18174 14.6207 2.26038 14.7484 2.36499 14.853L9.146 21.634ZM19.181 6.83398C19.3013 6.79376 19.4094 6.72347 19.495 6.62976C19.5806 6.53605 19.6408 6.42209 19.6699 6.29858C19.6991 6.17508 19.6962 6.04615 19.6615 5.92407C19.6269 5.802 19.5616 5.69074 19.472 5.60095L18.401 4.53003C18.3112 4.44036 18.2 4.37509 18.0779 4.34045C17.9559 4.30582 17.827 4.30288 17.7035 4.33203C17.58 4.36118 17.4659 4.42139 17.3722 4.50696C17.2785 4.59252 17.2082 4.7007 17.168 4.82104L16.855 5.75903L18.243 7.14697L19.181 6.83398Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="https://sehatty.ps/followup_patients" target="_blank">
+                                متابعة مرضى التحويلات الذي تم سفرهم خارج القطاع </a></h3>
+                        <div class="info">
+                            <a style="font-family:Poppins" href="https://sehatty.ps/followup_patients"
+                                target="_blank">Travel Patients</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-info svg-icon-5x">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path d="M6 21C6 21.6 6.4 22 7 22H17C17.6 22 18 21.6 18 21V20H6V21Z"
+                                                fill="black" />
+                                            <path d="M12 4C11.4 4 11 3.6 11 3V2H13V3C13 3.6 12.6 4 12 4Z"
+                                                fill="black" />
+                                            <path opacity="0.3"
+                                                d="M18 3V20H6V3C6 2.4 6.4 2 7 2H17C17.6 2 18 2.4 18 3ZM16 11C16 8.5 13.7 6.49998 11.1 7.09998C9.60001 7.39998 8.50001 8.6001 8.10001 10.1001C7.80001 11.5001 8.2 12.7 9 13.7L11.2 16.2C11.6 16.6 12.3 16.6 12.7 16.2L14.9 13.7C15.6 13 16 12 16 11Z"
+                                                fill="black" />
+                                            <path
+                                                d="M12 12.5C12.8284 12.5 13.5 11.8284 13.5 11C13.5 10.1716 12.8284 9.5 12 9.5C11.1716 9.5 10.5 10.1716 10.5 11C10.5 11.8284 11.1716 12.5 12 12.5Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3">
+                            <a href="https://palmoh.maps.arcgis.com/apps/dashboards/0048969c86df4542a5251f801ad1d7ba"
+                                target="_blank">
+                                <span class="badge badge-light-warning fs-7 fw-bolder">New</span> توزيع وانتشار مركبات الاسعاف  
+                                 الصحية
+                            </a>
+                        </h3>
+
+                        <div class="info">
+                            <a style="font-family:Poppins"
+                                href="https://palmoh.maps.arcgis.com/apps/dashboards/0048969c86df4542a5251f801ad1d7ba"
+                                target="_blank"> اللجنة الوطنية العليا للاسعاف</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-success svg-icon-5x">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M11.7 8L7.49998 15.3L4.59999 20.3C3.49999 18.4 3.1 17.7 2.3 16.3C1.9 15.7 1.9 14.9 2.3 14.3L8.8 3L11.7 8Z"
+                                                fill="black" />
+                                            <path opacity="0.3"
+                                                d="M11.7 8L8.79999 3H13.4C14.1 3 14.8 3.4 15.2 4L20.6 13.3H14.8L11.7 8ZM7.49997 15.2L4.59998 20.2H17.6C18.3 20.2 19 19.8 19.4 19.2C20.2 17.7 20.6 17 21.7 15.2H7.49997Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="https://sehatty.ps/uploads/files/Healthservices.pdf"
+                                target="_blank">دليل
+                                الخدمات</a></h3>
+                        <div class="info">
+                            <a style="font-family:Poppins" href="https://sehatty.ps/uploads/files/Healthservices.pdf"
+                                target="_blank">Health services</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-danger svg-icon-5x">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <path
+                                                d="M16.95 18.9688C16.75 18.9688 16.55 18.8688 16.35 18.7688C15.85 18.4688 15.75 17.8688 16.05 17.3688L19.65 11.9688L16.05 6.56876C15.75 6.06876 15.85 5.46873 16.35 5.16873C16.85 4.86873 17.45 4.96878 17.75 5.46878L21.75 11.4688C21.95 11.7688 21.95 12.2688 21.75 12.5688L17.75 18.5688C17.55 18.7688 17.25 18.9688 16.95 18.9688ZM7.55001 18.7688C8.05001 18.4688 8.15 17.8688 7.85 17.3688L4.25001 11.9688L7.85 6.56876C8.15 6.06876 8.05001 5.46873 7.55001 5.16873C7.05001 4.86873 6.45 4.96878 6.15 5.46878L2.15 11.4688C1.95 11.7688 1.95 12.2688 2.15 12.5688L6.15 18.5688C6.35 18.8688 6.65 18.9688 6.95 18.9688C7.15 18.9688 7.35001 18.8688 7.55001 18.7688Z"
+                                                fill="black" />
+                                            <path opacity="0.3"
+                                                d="M10.45 18.9687C10.35 18.9687 10.25 18.9687 10.25 18.9687C9.75 18.8687 9.35 18.2688 9.55 17.7688L12.55 5.76878C12.65 5.26878 13.25 4.8687 13.75 5.0687C14.25 5.1687 14.65 5.76878 14.45 6.26878L11.45 18.2688C11.35 18.6688 10.85 18.9687 10.45 18.9687Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="https://sehatty.ps/moh-service">
+                                 خدمة التقارير </a></h3>
+                        <div class="info">
+                            <a style="font-family:Poppins" href="https://sehatty.ps/moh-service">
+                                Reports</a>
+                        </div>
+                    </div>
+
+                    <div class="box">
+                        <div class="text-center">
+                            <div style="margin-bottom: 25px;" class="symbol symbol-50px me-3">
+                                <div class="">
+                                    <span class="svg-icon svg-icon-danger svg-icon-5x">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                            viewBox="0 0 24 24" fill="none">
+                                            <rect opacity="0.3" x="2" y="2" width="20" height="20"
+                                                rx="10" fill="black" />
+                                            <path
+                                                d="M11.276 13.654C11.276 13.2713 11.3367 12.9447 11.458 12.674C11.5887 12.394 11.738 12.1653 11.906 11.988C12.0833 11.8107 12.3167 11.61 12.606 11.386C12.942 11.1247 13.1893 10.896 13.348 10.7C13.5067 10.4947 13.586 10.2427 13.586 9.944C13.586 9.636 13.4833 9.356 13.278 9.104C13.082 8.84267 12.69 8.712 12.102 8.712C11.486 8.712 11.066 8.866 10.842 9.174C10.6273 9.482 10.52 9.82267 10.52 10.196L10.534 10.574H8.826C8.78867 10.3967 8.77 10.2333 8.77 10.084C8.77 9.552 8.90067 9.07133 9.162 8.642C9.42333 8.20333 9.81067 7.858 10.324 7.606C10.8467 7.354 11.4813 7.228 12.228 7.228C13.1987 7.228 13.9687 7.44733 14.538 7.886C15.1073 8.31533 15.392 8.92667 15.392 9.72C15.392 10.168 15.322 10.5507 15.182 10.868C15.042 11.1853 14.874 11.442 14.678 11.638C14.482 11.834 14.2253 12.0533 13.908 12.296C13.544 12.576 13.2733 12.8233 13.096 13.038C12.928 13.2527 12.844 13.528 12.844 13.864V14.326H11.276V13.654ZM11.192 15.222H12.928V17H11.192V15.222Z"
+                                                fill="black" />
+                                        </svg>
+                                    </span>
+                                    <!--end::Svg Icon-->
+                                </div>
+                            </div>
+                        </div>
+                        <h3 class="fs-3"><a href="https://sehatty.ps/uploads/files/complaints.pdf" target="_blank">
+                                التصنيف الفلسطيني للشكاوي <span
+                                    class="badge badge-light-danger fs-7 fw-bolder">New</span></a></h3>
+                        <div class="info">
+                            <a style="font-family:Poppins" href="https://sehatty.ps/uploads/files/complaints.pdf"
+                                target="_blank">Complaints</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--end::Container-->
+</div>
+
+        <!--end::How It Works Section-->
+        <!--begin::Statistics Section-->
+        <div class="mt-sm-n10">
+            <!--begin::Curve top-->
+            <div class="landing-curve landing-dark-color">
+                <svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z" fill="currentColor"></path>
+                </svg>
+            </div>
+            <!--end::Curve top-->
+            <!--begin::Wrapper-->
+            <span class="badge badge-circle badge-light-success fw-bolder p-5 me-3 fs-3">400</span>
+
+<div class="pb-15 pt-5 landing-dark-bg">
+    <!--begin::Container-->
+    <div class="container">
+        <!--begin::Heading-->
+        <div class="text-center mt-15 mb-18" id="our-statistics" data-kt-scroll-offset="{default: 100, lg: 150}">
+            <!--begin::Title-->
+            <h3 class="fs-1hx text-white fw-bolder mb-5 main-title"> احصائياتنا</h3>
+            <!--end::Title-->
+            <!--begin::Description-->
+            <div class="fs-5 text-gray-700 fw-bold">Our Statistics
+            <br /> </div>
+            <!--end::Description-->
+        </div>
+        <!--end::Heading-->
+        <!--begin::Statistics-->
+        <div class="d-flex flex-center">
+            <!--begin::Items-->
+            <div class="d-flex flex-wrap flex-center justify-content-lg-between mb-15 mx-auto w-xl-900px">
+                <!--begin::Item-->
+                <div class="d-flex flex-column flex-center h-200px w-200px h-lg-250px w-lg-250px m-3 bgi-no-repeat bgi-position-center bgi-size-contain" style="background-image: url('assets/media/svg/misc/octagon.svg')">
+                    <!--begin::Symbol-->
+                    <!--begin::Svg Icon | path: icons/duotune/general/gen025.svg-->
+                    <span class="svg-icon svg-icon-2tx svg-icon-white mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <rect x="2" y="2" width="9" height="9" rx="2" fill="black" />
+                            <rect opacity="0.3" x="13" y="2" width="9" height="9" rx="2" fill="black" />
+                            <rect opacity="0.3" x="13" y="13" width="9" height="9" rx="2" fill="black" />
+                            <rect opacity="0.3" x="2" y="13" width="9" height="9" rx="2" fill="black" />
+                        </svg>
+                    </span>
+                    <!--end::Svg Icon-->
+                    <!--end::Symbol-->
+                    <!--begin::Info-->
+                    <div class="mb-0">
+                        <!--begin::Value-->
+                        <div class="fs-lg-2hx fs-2x fw-bolder text-white d-flex flex-center">
+                            <div class="min-w-20px" data-kt-countup="true" data-kt-countup-value="35" data-kt-countup-suffix="">0</div>
+                        </div>
+                        <!--end::Value-->
+                        <!--begin::Label-->
+                        <span class="text-gray-600 fw-bold fs-3 lh-0">البرامج</span>
+                        <!--end::Label-->
+                    </div>
+                    <!--end::Info-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-column flex-center h-200px w-200px h-lg-250px w-lg-250px m-3 bgi-no-repeat bgi-position-center bgi-size-contain" style="background-image: url('assets/media/svg/misc/octagon.svg')">
+                    <!--begin::Symbol-->
+                    <!--begin::Svg Icon | path: icons/duotune/graphs/gra008.svg-->
+                    <span class="svg-icon svg-icon-2tx svg-icon-white mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M13 10.9128V3.01281C13 2.41281 13.5 1.91281 14.1 2.01281C16.1 2.21281 17.9 3.11284 19.3 4.61284C20.7 6.01284 21.6 7.91285 21.9 9.81285C22 10.4129 21.5 10.9128 20.9 10.9128H13Z" fill="black" />
+                            <path opacity="0.3" d="M13 12.9128V20.8129C13 21.4129 13.5 21.9129 14.1 21.8129C16.1 21.6129 17.9 20.7128 19.3 19.2128C20.7 17.8128 21.6 15.9128 21.9 14.0128C22 13.4128 21.5 12.9128 20.9 12.9128H13Z" fill="black" />
+                            <path opacity="0.3" d="M11 19.8129C11 20.4129 10.5 20.9129 9.89999 20.8129C5.49999 20.2129 2 16.5128 2 11.9128C2 7.31283 5.39999 3.51281 9.89999 3.01281C10.5 2.91281 11 3.41281 11 4.01281V19.8129Z" fill="black" />
+                        </svg>
+                    </span>
+                    <!--end::Svg Icon-->
+                    <!--end::Symbol-->
+                    <!--begin::Info-->
+                    <div class="mb-0">
+                        <!--begin::Value-->
+                        <div class="fs-lg-2hx fs-2x fw-bolder text-white d-flex flex-center">
+                            <div class="min-w-20px" data-kt-countup="true" data-kt-countup-value="4" data-kt-countup-suffix="">0</div>
+                        </div>
+                        <!--end::Value-->
+                        <!--begin::Label-->
+                        <span class="text-gray-600 fw-bold fs-3 lh-0">التطبيقات</span>
+                        <!--end::Label-->
+                    </div>
+                    <!--end::Info-->
+                </div>
+                <!--end::Item-->
+                <!--begin::Item-->
+                <div class="d-flex flex-column flex-center h-200px w-200px h-lg-250px w-lg-250px m-3 bgi-no-repeat bgi-position-center bgi-size-contain" style="background-image: url('assets/media/svg/misc/octagon.svg')">
+                    <!--begin::Symbol-->
+                    <!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm002.svg-->
+                    <span class="svg-icon svg-icon-2tx svg-icon-white mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M21 10H13V11C13 11.6 12.6 12 12 12C11.4 12 11 11.6 11 11V10H3C2.4 10 2 10.4 2 11V13H22V11C22 10.4 21.6 10 21 10Z" fill="black" />
+                            <path opacity="0.3" d="M12 12C11.4 12 11 11.6 11 11V3C11 2.4 11.4 2 12 2C12.6 2 13 2.4 13 3V11C13 11.6 12.6 12 12 12Z" fill="black" />
+                            <path opacity="0.3" d="M18.1 21H5.9C5.4 21 4.9 20.6 4.8 20.1L3 13H21L19.2 20.1C19.1 20.6 18.6 21 18.1 21ZM13 18V15C13 14.4 12.6 14 12 14C11.4 14 11 14.4 11 15V18C11 18.6 11.4 19 12 19C12.6 19 13 18.6 13 18ZM17 18V15C17 14.4 16.6 14 16 14C15.4 14 15 14.4 15 15V18C15 18.6 15.4 19 16 19C16.6 19 17 18.6 17 18ZM9 18V15C9 14.4 8.6 14 8 14C7.4 14 7 14.4 7 15V18C7 18.6 7.4 19 8 19C8.6 19 9 18.6 9 18Z" fill="black" />
+                        </svg>
+                    </span>
+                    <!--end::Svg Icon-->
+                    <!--end::Symbol-->
+                    <!--begin::Info-->
+                    <div class="mb-0">
+                        <!--begin::Value-->
+                        <div class="fs-lg-2hx fs-2x fw-bolder text-white d-flex flex-center">
+                            <div class="min-w-20px" data-kt-countup="true" data-kt-countup-value="5" data-kt-countup-suffix="">5</div>
+                        </div>
+                        <!--end::Value-->
+                        <!--begin::Label-->
+                        <span class="text-gray-600 fw-bold fs-3 lh-0">خدمات الجمهور</span>
+                        <!--end::Label-->
+                    </div>
+                    <!--end::Info-->
+                </div>
+                <!--end::Item-->
+
+                <!--begin::Item-->
+                
+                <!--end::Item-->
+
+            </div>
+            <!--end::Items-->
+        </div>
+        <!--end::Statistics-->
+        <!--begin::Testimonial-->
+        
+        <!--end::Testimonial-->
+        <!--begin::Author-->
+        <div class="fs-2 fw-bold text-muted text-center">
+            <a href="javascript:;" class="link-primary fs-4 fw-bolder"></a>
+            
+        </div>
+        <!--end::Author-->
+    </div>
+    <!--end::Container-->
+</div>
+
+
+            <!--end::Wrapper-->
+            <!--begin::Curve bottom-->
+            <div class="landing-curve landing-dark-color">
+                <svg viewBox="15 12 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 11C3.93573 11.3356 7.85984 11.6689 11.7725 12H1488.16C1492.1 11.6689 1496.04 11.3356 1500 11V12H1488.16C913.668 60.3476 586.282 60.6117 11.7725 12H0V11Z" fill="currentColor"></path>
+                </svg>
+            </div>
+            <!--end::Curve bottom-->
+        </div>
+        <!--end::Statistics Section-->
+
+        <!--begin::How It Works Section Citizen-->
+        
+
+        <!--end::How It Works Section-->
+
+        <!--begin::Team Section-->
+    <div style="margin-top: 30px;" class="mb-13 text-center">
+    <h1 class="fs-1hx text-dark mb-5 main-title" id="information-center" data-kt-scroll-offset="{default: 100, lg: 150}">مركز المعلومات</h1>
+</div>
+
+<div class="iframe-wrapper bg-light">
+    <div class="iframe-container">
+        <iframe
+            title="Sehatty Amputation ,Brain & Spinal Cord Cases" width="600"
+            src="https://app.powerbi.com/view?r=eyJrIjoiNWQ1NjI1MDMtZDQ2Yy00MWNmLThmZjktNjJmZDQ0MzFmNGFkIiwidCI6IjcxNmE0NmIwLTgzZTEtNDM3My04YTM3LWUxNjQ3OTg3ZmI4ZCIsImMiOjEwfQ%3D%3D"
+            frameborder="0"
+            allowFullScreen="true">
+        </iframe>
+    </div>
+</div>
+
+<style>
+    .iframe-wrapper {
+        display: flex;
+        justify-content: center;
+        /* Center horizontally */
+        align-items: center;
+        /* Center vertically */
+        height: 100vh;
+        /* Full screen height */
+        /* Background color */
+    }
+
+    .iframe-container {
+        position: relative;
+        width: 100%;
+        max-width: 1050px;
+        height: 500px;
+        background: linear-gradient(to right, #2c3e50, #4ca1af);
+        /* Gradient Background */
+        padding: 3px;
+        /* Add padding around iframe */
+        border-radius: 10px;
+        /* Optional rounded corners */
+    }
+
+    .iframe-container iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: white;
+        /* Ensures the iframe doesn't have a transparent background */
+    }
+
+</style>
+
+<script>
+    function loadIframe() {
+        document.getElementById('iframe-container').innerHTML = `
+                    <iframe
+                        title="Cumulative Statistics Dashboard 230012025"
+                        src="https://app.powerbi.com/view?r=eyJrIjoiYzA3NWIwZDktNzBkMC00ZDU1LThkN2UtZjEyNTZiMWQ3Mzg3IiwidCI6IjcxNmE0NmIwLTgzZTEtNDM3My04YTM3LWUxNjQ3OTg3ZmI4ZCIsImMiOjEwfQ%3D%3D"
+                        frameborder="1"
+                        allowFullScreen="true"
+                        width="100%"
+                        height="600px">
+                    </iframe>
+                `;
+    }
+
+</script>
+
+
+    <div style="margin-top: 30px;" class="mb-13 text-center">
+    <h1 class="fs-1hx text-dark mb-5 main-title" id="tenders" data-kt-scroll-offset="{default: 100, lg: 150}">العطاءات
+    </h1>
+</div>
+
+<div class="mb-n10 mb-lg-n20 z-index-2">
+    <div class="py-20 landing-dark-bg">
+        <!--begin::Container-->
+        <div class="container">
+            <!--begin::Plans-->
+            <div class="d-flex flex-column container pt-lg-20">
+                <!--begin::Heading-->
+
+
+                <!--end::Heading-->
+                <!--begin::Pricing-->
+                <div class="text-center" id="kt_pricing">
+                    <div dir="rtl" class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+                                                    <div class="col">
+                                <div
+                                    class="card h-100 position-relative 
+                     bg-light text-dark  shadow-sm rounded-3">
+
+                                    
+                                    <div class="ribbon position-absolute top-0 end-0 m-3">
+                                        <div
+                                            class="ribbon-label 
+                             bg-danger ">
+                                                                                            منتهي
+                                                                                    </div>
+                                    </div>
+
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        
+                                        <div class="text-center mb-5">
+                                            <h3
+                                                class="fs-3 fw-bold mb-3  text-dark ">
+                                                بيع جالونات المحاليل الفارغة
+                                            </h3>
+                                            <div
+                                                class="fs-6 fw-bold mb-3  text-gray-600 ">
+                                                <i class="ki-outline ki-calendar text-primary me-2"></i>
+                                                2026-06-18
+                                            </div>
+                                            <p
+                                                class="mb-0 text-truncate  text-gray-600 ">
+                                                دعوة للمشاركة في عرض سعر مزاودة رقم 7/9/2026 الخاص ببيع جالونات المحاليل الفارغة
+                                            </p>
+                                        </div>
+
+                                        
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-between mb-5">
+                                                <span
+                                                    class="fw-bold fs-6  text-gray-800 ">
+                                                    رقم المناقصة
+                                                </span>
+                                                <span
+                                                    class="badge  bg-light-primary text-primary ">
+                                                    7/9/2026
+                                                </span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span
+                                                    class="fw-bold fs-6 mb-5  text-gray-800 ">
+                                                    جهة التمويل
+                                                </span>
+                                                <span
+                                                    class=" text-gray-600 ">
+                                                    وزارة المالية
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="d-flex gap-3 justify-content-center mt-auto">
+                                            <a href="https://sehatty.ps/tenders/17"
+                                                class="btn  btn-primary  fw-bold px-4 py-2 rounded">
+                                                عرض التفاصيل
+                                            </a>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="col">
+                                <div
+                                    class="card h-100 position-relative 
+                     bg-primary text-white  shadow-sm rounded-3">
+
+                                    
+                                    <div class="ribbon position-absolute top-0 end-0 m-3">
+                                        <div
+                                            class="ribbon-label 
+                             bg-danger ">
+                                                                                            منتهي
+                                                                                    </div>
+                                    </div>
+
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        
+                                        <div class="text-center mb-5">
+                                            <h3
+                                                class="fs-3 fw-bold mb-3  text-white ">
+                                                شراء خدمة صيانة إعادة تأهيل مصعد العمليات م. الأقصى
+                                            </h3>
+                                            <div
+                                                class="fs-6 fw-bold mb-3  text-white-75 ">
+                                                <i class="ki-outline ki-calendar text-primary me-2"></i>
+                                                2026-06-18
+                                            </div>
+                                            <p
+                                                class="mb-0 text-truncate  text-white-75 ">
+                                                دعوة للمشاركة في عرض السعر الخاص بشراء خدمة صيانة إعادة تأهيل مصعد العمليات في مستشفى شهداء الأقصى
+                                            </p>
+                                        </div>
+
+                                        
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-between mb-5">
+                                                <span
+                                                    class="fw-bold fs-6  text-white ">
+                                                    رقم المناقصة
+                                                </span>
+                                                <span
+                                                    class="badge  bg-light text-dark ">
+                                                    101/9/2026
+                                                </span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span
+                                                    class="fw-bold fs-6 mb-5  text-white ">
+                                                    جهة التمويل
+                                                </span>
+                                                <span
+                                                    class=" text-white-75 ">
+                                                    وزارة المالية
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="d-flex gap-3 justify-content-center mt-auto">
+                                            <a href="https://sehatty.ps/tenders/19"
+                                                class="btn  btn-light-primary  fw-bold px-4 py-2 rounded">
+                                                عرض التفاصيل
+                                            </a>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="col">
+                                <div
+                                    class="card h-100 position-relative 
+                     bg-light text-dark  shadow-sm rounded-3">
+
+                                    
+                                    <div class="ribbon position-absolute top-0 end-0 m-3">
+                                        <div
+                                            class="ribbon-label 
+                             bg-danger ">
+                                                                                            منتهي
+                                                                                    </div>
+                                    </div>
+
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        
+                                        <div class="text-center mb-5">
+                                            <h3
+                                                class="fs-3 fw-bold mb-3  text-dark ">
+                                                اعادة تأهيل الطابق الاول من مبنى التنمية البشرية في مجمع الشفاء الطبي
+                                            </h3>
+                                            <div
+                                                class="fs-6 fw-bold mb-3  text-gray-600 ">
+                                                <i class="ki-outline ki-calendar text-primary me-2"></i>
+                                                2026-06-11
+                                            </div>
+                                            <p
+                                                class="mb-0 text-truncate  text-gray-600 ">
+                                                احضار المحضر مختوما مع كراسة العطاء
+                                            </p>
+                                        </div>
+
+                                        
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-between mb-5">
+                                                <span
+                                                    class="fw-bold fs-6  text-gray-800 ">
+                                                    رقم المناقصة
+                                                </span>
+                                                <span
+                                                    class="badge  bg-light-primary text-primary ">
+                                                    11/2026
+                                                </span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span
+                                                    class="fw-bold fs-6 mb-5  text-gray-800 ">
+                                                    جهة التمويل
+                                                </span>
+                                                <span
+                                                    class=" text-gray-600 ">
+                                                    على حساب مانحيين
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="d-flex gap-3 justify-content-center mt-auto">
+                                            <a href="https://sehatty.ps/tenders/18"
+                                                class="btn  btn-primary  fw-bold px-4 py-2 rounded">
+                                                عرض التفاصيل
+                                            </a>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="col">
+                                <div
+                                    class="card h-100 position-relative 
+                     bg-primary text-white  shadow-sm rounded-3">
+
+                                    
+                                    <div class="ribbon position-absolute top-0 end-0 m-3">
+                                        <div
+                                            class="ribbon-label 
+                             bg-danger ">
+                                                                                            منتهي
+                                                                                    </div>
+                                    </div>
+
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        
+                                        <div class="text-center mb-5">
+                                            <h3
+                                                class="fs-3 fw-bold mb-3  text-white ">
+                                                مشروع &quot;تطوير وتوسعة قسم الأورام في مجمع الشفاء الطبي
+                                            </h3>
+                                            <div
+                                                class="fs-6 fw-bold mb-3  text-white-75 ">
+                                                <i class="ki-outline ki-calendar text-primary me-2"></i>
+                                                2026-06-10
+                                            </div>
+                                            <p
+                                                class="mb-0 text-truncate  text-white-75 ">
+                                                سيتم عمل معاينة للموقع وجلسة تمهيدية يوم الأحد الموافق 2026/06/14م في تمام الساعة العاشرة صباحاً في موقع
+العمل
+                                            </p>
+                                        </div>
+
+                                        
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-between mb-5">
+                                                <span
+                                                    class="fw-bold fs-6  text-white ">
+                                                    رقم المناقصة
+                                                </span>
+                                                <span
+                                                    class="badge  bg-light text-dark ">
+                                                    12/2023
+                                                </span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span
+                                                    class="fw-bold fs-6 mb-5  text-white ">
+                                                    جهة التمويل
+                                                </span>
+                                                <span
+                                                    class=" text-white-75 ">
+                                                    على حساب مانحيين
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="d-flex gap-3 justify-content-center mt-auto">
+                                            <a href="https://sehatty.ps/tenders/16"
+                                                class="btn  btn-light-primary  fw-bold px-4 py-2 rounded">
+                                                عرض التفاصيل
+                                            </a>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="col">
+                                <div
+                                    class="card h-100 position-relative 
+                     bg-light text-dark  shadow-sm rounded-3">
+
+                                    
+                                    <div class="ribbon position-absolute top-0 end-0 m-3">
+                                        <div
+                                            class="ribbon-label 
+                             bg-danger ">
+                                                                                            منتهي
+                                                                                    </div>
+                                    </div>
+
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        
+                                        <div class="text-center mb-5">
+                                            <h3
+                                                class="fs-3 fw-bold mb-3  text-dark ">
+                                                بيع مشاطيح خشب فارغة
+                                            </h3>
+                                            <div
+                                                class="fs-6 fw-bold mb-3  text-gray-600 ">
+                                                <i class="ki-outline ki-calendar text-primary me-2"></i>
+                                                2026-06-03
+                                            </div>
+                                            <p
+                                                class="mb-0 text-truncate  text-gray-600 ">
+                                                بيع مشاطيح خشب فارغة طرف الإدارة العامة للصيدلة وعيادة الشيخ رضوان
+                                            </p>
+                                        </div>
+
+                                        
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-between mb-5">
+                                                <span
+                                                    class="fw-bold fs-6  text-gray-800 ">
+                                                    رقم المناقصة
+                                                </span>
+                                                <span
+                                                    class="badge  bg-light-primary text-primary ">
+                                                    6/9/2026
+                                                </span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span
+                                                    class="fw-bold fs-6 mb-5  text-gray-800 ">
+                                                    جهة التمويل
+                                                </span>
+                                                <span
+                                                    class=" text-gray-600 ">
+                                                    وزارة المالية
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="d-flex gap-3 justify-content-center mt-auto">
+                                            <a href="https://sehatty.ps/tenders/15"
+                                                class="btn  btn-primary  fw-bold px-4 py-2 rounded">
+                                                عرض التفاصيل
+                                            </a>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="col">
+                                <div
+                                    class="card h-100 position-relative 
+                     bg-primary text-white  shadow-sm rounded-3">
+
+                                    
+                                    <div class="ribbon position-absolute top-0 end-0 m-3">
+                                        <div
+                                            class="ribbon-label 
+                             bg-danger ">
+                                                                                            منتهي
+                                                                                    </div>
+                                    </div>
+
+                                    <div class="card-body d-flex flex-column justify-content-between">
+                                        
+                                        <div class="text-center mb-5">
+                                            <h3
+                                                class="fs-3 fw-bold mb-3  text-white ">
+                                                صيانة دورية لمصعد مستشفى العيون
+                                            </h3>
+                                            <div
+                                                class="fs-6 fw-bold mb-3  text-white-75 ">
+                                                <i class="ki-outline ki-calendar text-primary me-2"></i>
+                                                2026-06-01
+                                            </div>
+                                            <p
+                                                class="mb-0 text-truncate  text-white-75 ">
+                                                دعوة للمشاركة في عرض سعر لشراء خدمة صيانة دورية لمصعد الجمهور مستشفى العيون SIGMA-LG
+                                            </p>
+                                        </div>
+
+                                        
+                                        <div class="mb-4">
+                                            <div class="d-flex justify-content-between mb-5">
+                                                <span
+                                                    class="fw-bold fs-6  text-white ">
+                                                    رقم المناقصة
+                                                </span>
+                                                <span
+                                                    class="badge  bg-light text-dark ">
+                                                    79-9-2026
+                                                </span>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <span
+                                                    class="fw-bold fs-6 mb-5  text-white ">
+                                                    جهة التمويل
+                                                </span>
+                                                <span
+                                                    class=" text-white-75 ">
+                                                    وزارة المالية
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        
+                                        <div class="d-flex gap-3 justify-content-center mt-auto">
+                                            <a href="https://sehatty.ps/tenders/13"
+                                                class="btn  btn-light-primary  fw-bold px-4 py-2 rounded">
+                                                عرض التفاصيل
+                                            </a>
+
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+
+                    
+                    <div class="text-center mt-5">
+                        <a href="https://sehatty.ps/show-tenders" class="btn btn-primary btn-lg px-5 py-3 rounded">
+                            عرض جميع العطاءات
+                        </a>
+                    </div>
+                </div>
+                <!--end::Pricing-->
+            </div>
+            <!--end::Plans-->
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--begin::Projects Section-->
+    
+
+    <!--begin::Testimonials Section-->
+    <div class="mt-20 mb-n20 position-relative z-index-2">
+        <!--begin::Container-->
+        <div class="container">
+
+            <!--begin::Highlight-->
+            <div class="d-flex flex-stack flex-wrap flex-md-nowrap card-rounded shadow p-8 p-lg-12 mb-n5 mb-lg-n13" style="background: linear-gradient(90deg, #20AA3E 0%, #03A588 100%);">
+                <!--begin::Content-->
+                <div class="my-2 me-5">
+                    <!--begin::Title-->
+                    <div class="fs-2 fs-lg-1x fw-bolder text-white mb-2">للتواصل من خلال الواتساب
+                    <span class="fw-normal">
+                     <img src="assets/media/icons/duotune/arrows/arr060.svg"/>
+
+                    </span></div>
+                    <!--end::Title-->
+                    <!--begin::Description-->
+                    
+                    <!--end::Description-->
+                </div>
+                <!--end::Content-->
+                <!--begin::Link-->
+                <a href="https://wa.me/+970592048103" class="btn btn-lg btn-outline border-2 btn-outline-white flex-shrink-0 my-2"><img class="h-20px me-2 btn-outline-success" src="assets/whatsapp.svg"  alt="">
+                    Whatsapp</a>
+                <!--end::Link-->
+            </div>
+            <!--end::Highlight-->
+        </div>
+        <!--end::Container-->
+    </div>
+	<!--end::Testimonials Section-->
+    <!--end::Testimonials Section-->
+    <!--begin::Footer Section-->
+    <div class="mb-0">
+    <!--begin::Curve top-->
+    <div class="landing-curve landing-dark-color">
+        <svg viewBox="15 -1 1470 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M1 48C4.93573 47.6644 8.85984 47.3311 12.7725 47H1489.16C1493.1 47.3311 1497.04 47.6644 1501 48V47H1489.16C914.668 -1.34764 587.282 -1.61174 12.7725 47H1V48Z"
+                fill="currentColor"></path>
+        </svg>
+    </div>
+    <!--end::Curve top-->
+    <!--begin::Wrapper-->
+    <div class="landing-dark-bg pt-20">
+        <!--begin::Container-->
+        <div class="container">
+            <!--begin::Row-->
+            <div class="row py-10 py-lg-20">
+                <!--begin::Col-->
+                <div class="col-lg-3 pe-lg-16 mb-30 mb-lg-0">
+                    <!--begin::Block-->
+                    <div class="rounded landing-dark-border p-9 mb-10">
+                        <!--begin::Title-->
+                        <h3 class="text-white">لديك استفسار أو سؤال؟</h3>
+                        <!--end::Title-->
+                        <!--begin::Text-->
+                        <span class="fw-normal fs-4 text-gray-700">
+                            <a href="https://sehatty.ps/create_complaint"
+                                class="text-white opacity-50 text-hover-primary">قدم من هنا</a></span>
+                        <!--end::Text-->
+                    </div>
+                    <!--end::Block-->
+                    <!--begin::Block-->
+                    
+                    <!--end::Block-->
+                </div>
+                <!--end::Col-->
+                <div class="col-lg-3 pe-lg-16 mb-30 mb-lg-0">
+                    <!--begin::Block-->
+                    <div class="rounded landing-dark-border p-9 mb-10">
+                        <!--begin::Title-->
+
+                        <!--end::Title-->
+                        <!--begin::Text-->
+                        <span class="fw-normal fs-4 text-gray-700">
+                           <img class="me-10" width="60px" width="60px" src="assets/sehaty_qr/qr.jpg" alt="">
+                           <img class="me-10" width="60px" width="60px" src="assets/sehaty_qr/qr2.jpg" alt="">
+
+                        </span>
+                        <!--end::Text-->
+                    </div>
+                    <!--end::Block-->
+                    <!--begin::Block-->
+                    
+                    <!--end::Block-->
+                </div>
+                <!--begin::Col-->
+
+                <div class="col-lg-6 ps-lg-16">
+                    <!--begin::Navs-->
+                    <div class="d-flex justify-content-center">
+                        <!--begin::Links-->
+                        <div class="d-flex fw-bold flex-column">
+                            <!--begin::Subtitle-->
+                            <h4 class="fw-bolder text-gray-400 mb-6">مواقع ذات صلة</h4>
+                            <!--end::Subtitle-->
+                            <!--begin::Link-->
+                            <a href="https://www.emro.who.int/countries/opt/index.html"
+                                class="text-center text-white opacity-50 text-hover-primary fs-5 mb-6">WHO</a>
+                            <!--end::Link-->
+                            <!--begin::Link-->
+                            <a href="https://www.unicef.org/sop"
+                                class="text-center text-white opacity-50 text-hover-primary fs-5 mb-6">Unicef</a>
+                            <!--end::Link-->
+
+                            <a href="https://www.msf.org/palestine"
+                                class="text-center text-white opacity-50 text-hover-primary fs-5 mb-6">MSF</a>
+
+                            <a href="https://www.map.org.uk/"
+                                class="text-center text-white opacity-50 text-hover-primary fs-5 mb-6">MAP UK</a>
+
+                            <!--begin::Link-->
+
+                        </div>
+                        <!--end::Links-->
+                        <!--begin::Links-->
+                        <div dir="ltr" class="d-flex fw-bold flex-column ms-lg-20 me-20">
+                            <!--begin::Subtitle-->
+                            <h4 class="fw-bolder text-gray-400 mb-6">التطبيقات
+                            </h4>
+                            <!--end::Subtitle-->
+
+                            <!--begin::Link-->
+                            <a href="http://play.google.com/store/apps/details?id=com.MOH.sehatty_smart" class="mb-6">
+                                
+                                <!--begin::Svg Icon | path: assets/media/icons/duotune/social/soc002.svg-->
+                                
+                                    <img src=assets/android1.svg class="h-25px h-md-30px" />
+
+                                <!--end::Svg Icon-->
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6 me-2">SMART
+                                    SEHATTY</span>
+                            </a>
+                            <!--end::Link-->
+
+                            <!--begin::Link-->
+                            
+                            <!--end::Link-->
+                            <a href="https://apps.apple.com/il/app/%D8%B5%D8%AD%D8%AA%D9%8A-%D8%B3%D9%85%D8%A7%D8%B1%D8%AA/id6738603389"
+                                class="mb-6">
+                                <!--begin::Svg Icon | path: assets/media/icons/duotune/social/soc001.svg-->
+                                
+                                    <img src=assets/apple1.svg class="h-25px h-md-30px" />
+
+                                <!--end::Svg Icon-->
+
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6 me-2">SMART
+                                    SEHATTY</span>
+                            </a>
+
+                            <!--begin::Link-->
+                            <a href="https://play.google.com/store/apps/details?id=com.moh.pulse_smart" class="mb-6">
+                                
+                                
+                                <img src=assets/android2.svg class="h-25px h-md-30px" />
+
+                                    <!--end::Svg Icon-->
+
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6 me-2">SMART PULSE</span>
+                            </a>
+
+                            <a href="https://apps.apple.com/il/app/%D8%A8%D9%84%D8%B3-%D8%B3%D9%85%D8%A7%D8%B1%D8%AA/id6741423463" class="mb-6">
+                                
+                                
+
+                                <img src=assets/apple2.svg class="h-25px h-md-30px" />
+                                    <!--end::Svg Icon-->
+
+                                <span class="text-white opacity-50 text-hover-primary fs-5 mb-6 me-2">SMART PULSE</span>
+                            </a>
+                            <!--end::Link-->
+
+                        </div>
+                        <!--end::Links-->
+                    </div>
+                    <!--end::Navs-->
+                </div>
+                <!--end::Col-->
+            </div>
+            <!--end::Row-->
+
+        </div>
+        <!--end::Container-->
+        <!--begin::Separator-->
+        <div class="landing-dark-separator"></div>
+        <!--end::Separator-->
+        <!--begin::Container-->
+        <div class="container">
+            <!--begin::Wrapper-->
+            <div class="d-flex flex-column flex-md-row flex-stack py-1 py-lg-2">
+                <!--begin::Copyright-->
+                <div class="d-flex align-items-center order-2 order-md-1">
+                    <!--begin::Logo-->
+                    <a href="https://sehatty.ps">
+                        <img alt="Logo" src=assets/sehatty_moh.png class="h-15px h-md-20px" />
+
+                        
+                    </a>
+                    <!--end::Logo image-->
+                    <!--begin::Logo image-->
+                    <span class="mx-5 fs-6 fw-bold text-gray-600 pt-1" href="#">2026© - MOH</span>
+                    <!--end::Logo image-->
+                </div>
+                <!--end::Copyright-->
+                <!--begin::Menu-->
+                <ul class="menu menu-gray-600 menu-hover-primary fw-bold fs-6 fs-md-5 order-1 mb-5 mb-md-0">
+                    
+                    <li class="menu-item">
+                        <a href="https://sehatty.ps" data-bs-toggle="tooltip" data-bs-dismiss="click" title=""
+                            class="menu-link px-2">sehatty.ps</a>
+                    </li>
+
+                </ul>
+                <!--end::Menu-->
+            </div>
+            <!--end::Wrapper-->
+        </div>
+        <!--end::Container-->
+    </div>
+    <!--end::Wrapper-->
+</div>
+
+    <!--end::Footer Section-->
+    <!--begin::Scrolltop-->
+    <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+        <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
+        <span class="svg-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="black" />
+                <path d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z" fill="black" />
+            </svg>
+        </span>
+        <!--end::Svg Icon-->
+    </div>
+    <!--end::Scrolltop-->
+    </div>
+    <!--end::Main-->
+    <script>
+        var hostUrl = "assets/";
+
+    </script>
+    <!--begin::Javascript-->
+    <!--begin::Global Javascript Bundle(used by all pages)-->
+    <script src=assets/plugins/global/plugins.bundle.js></script>
+    <script src=assets/js/scripts.bundle.js></script>
+
+    <!--end::Global Javascript Bundle-->
+    <!--begin::Page Vendors Javascript(used by this page)-->
+    <script src=assets/plugins/custom/fslightbox/fslightbox.bundle.js></script>
+    <script src=assets/plugins/custom/typedjs/typedjs.bundle.js></script>
+    <!--end::Page Vendors Javascript-->
+    <!--begin::Page Custom Javascript(used by this page)-->
+    <script src=assets/js/custom/landing.js></script>
+    <script src=assets/js/custom/pages/general/pricing.js></script>
+    <!--end::Page Custom Javascript-->
+    <!--end::Javascript-->
+</body>
+<!--end::Body-->
+</html>

@@ -1,0 +1,13 @@
+{
+  "name": "sehatty-referral",
+  "version": "1.0.0",
+  "private": true,
+  "description": "مشروع تدريبي: واجهة التحويلات الطبية مع باك-إند محاكاة Kobo (بدون قاعدة بيانات)",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

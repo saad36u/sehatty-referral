@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" direction="rtl" dir="rtl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>منظومة صحتي الالكترونية</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="منظومة صحتي الالكترونية" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Keenthemes | Metronic" />
+    
+    <link rel="icon" href="../../assets/media/logos/favicon.ico" type="image/x-icon">
+    <meta name="csrf-token" content="DDFuKYeGmIlnXEMR82rzegG7QleDjtCUdqLYh6lP">
+
+    <!-- Fonts (محلي من مجلد assets) -->
+    <link href="../../assets/fonts/tajawal.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/fonts/bootstrap-icons.css" rel="stylesheet" type="text/css" />
+
+    <!-- Global Stylesheets (محلي من مجلد assets) -->
+    <link href="../../assets/plugins.bundle.css" rel="stylesheet" type="text/css" />
+    <link href="../../assets/style.bundle.rtl.css" rel="stylesheet" type="text/css" />
+
+    <!-- ملاحظة: fullcalendar / datatables / prismjs غير مستخدمة في هذه الصفحة -->
+
+    <style>
+        body {
+            font-family: Tajawal, Helvetica, sans-serif;
+        }
+
+        /* Header Centering */
+        #kt_header .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        #kt_header .header-title {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 22px;
+            font-weight: 600;
+            color: white;
+        }
+
+        @media (max-width: 991px) {
+            #kt_header .header-title {
+                position: static;
+                transform: none;
+                text-align: center;
+            }
+        }
+    </style>
+
+        <style>
+        .fade-alert {
+            animation: fadeIn 1.2s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+
+    </style>
+</head>
+
+<body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
+
+    <!-- Root -->
+    <div class="d-flex flex-column flex-root">
+
+        <!-- Page -->
+        <div class="page d-flex flex-row flex-column-fluid">
+
+            <!-- Wrapper -->
+            <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
+
+                <!-- Header -->
+                <div id="kt_header" class="header" data-kt-sticky="true" style="height: 105px;">
+                    <div class="container-xxl header-container">
+                        <!-- Logo -->
+                        <div class="d-flex align-items-center">
+                            <a href="/">
+                                <img alt="Logo" src="../../assets/sehatty_moh.png" class="h-50px" />
+                            </a>
+                        </div>
+
+                        <!-- Title -->
+                        <div class="header-title">الخدمات الالكترونية</div>
+
+                        <!-- Mobile Toggle -->
+                        <div class="d-lg-none">
+                            <button class="btn btn-icon btn-active-color-primary" id="kt_header_menu_toggle">
+                                <span class="svg-icon svg-icon-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M21 7H3C2.4 7 2 6.6 2 6V4C2 3.4 2.4 3 3 3H21C21.6 3 22 3.4 22 4V6C22 6.6 21.6 7 21 7Z" fill="black" />
+                                        <path opacity="0.3"
+                                            d="M21 14H3C2.4 14 2 13.6 2 13V11C2 10.4 2.4 10 3 10H21C21.6 10 22 10.4 22 11V13C22 13.6 21.6 14 21 14ZM22 20V18C22 17.4 21.6 17 21 17H3C2.4 17 2 17.4 2 18V20C2 20.6 2.4 21 3 21H21C21.6 21 22 20.6 22 20Z"
+                                            fill="black" />
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Header -->
+
+                <!-- Toolbar (يمكن إضافة Breadcrumb أو أزرار سريعة هنا) -->
+                <div class="toolbar py-5 py-lg-7" id="kt_toolbar"></div>
+
+                <!-- Content -->
+                <div id="kt_content_container" class="d-flex flex-column-fluid align-items-start container-xxl">
+                    <div class="content flex-row-fluid" id="kt_content">
+                            <div class="d-flex justify-content-center align-items-center" style="min-height: 60vh; background-color: #f5f5f5;">
+        <div class="card p-8 w-600px" style="border-radius: 12px; background-color: #fff;">
+
+            <!-- تنبيه صيانة -->
+            
+
+            <!-- تنويه أعلى الصفحة -->
+            <div class="alert alert-info text-center mb-6" role="alert" style="font-size: 0.95rem;">
+                الرجاء استخدام هذا الحساب للوصول إلى جميع الخدمات الإلكترونية للمواطنين.
+            </div>
+
+            <div class="text-center mb-6">
+                <img src="../../assets/images/logo.png" alt="Logo" class="mb-3" style="width: 120px;">
+                <h3 class="fw-bold">تسجيل الدخول</h3>
+            </div>
+
+            <form id="citizenLoginForm">
+                <input type="hidden" name="_token" value="DDFuKYeGmIlnXEMR82rzegG7QleDjtCUdqLYh6lP">
+                <div class="mb-4 position-relative">
+                    <input type="text" name="national_id" class="form-control form-control-lg ps-12"
+                        placeholder="رقم الهوية">
+                    <span class="position-absolute top-50 translate-middle-y start-4">
+                        <i class="bi bi-person-fill text-muted fs-5"></i>
+                    </span>
+                </div>
+
+                <div class="mb-6 position-relative">
+                    <input type="password" name="password" class="form-control form-control-lg ps-12"
+                        placeholder="كلمة المرور">
+                    <span class="position-absolute top-50 translate-middle-y start-4">
+                        <i class="bi bi-lock-fill text-muted fs-5"></i>
+                    </span>
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100 btn-lg mb-3">
+                    دخول
+                </button>
+
+                <div class="separator my-6"></div>
+
+                <div class="row g-3">
+                    <!-- مستخدم جديد -->
+                    <div class="col-12">
+                        <a href="#" class="btn btn-light-primary w-100 fw-bold">
+                            <i class="bi bi-person-plus-fill me-2"></i>
+                            مستخدم جديد – إنشاء حساب
+                        </a>
+                    </div>
+
+                    <!-- نسيت كلمة المرور -->
+                    <div class="col-12">
+                        <a href="#" class="btn btn-light-warning w-100 fw-bold">
+                            <i class="bi bi-shield-lock-fill me-2"></i>
+                            نسيت كلمة المرور؟
+                        </a>
+                    </div>
+                </div>
+
+
+
+            </form>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+                <!-- End Content -->
+
+                <!-- Footer -->
+                <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
+                    <div class="container-xxl d-flex flex-column flex-md-row align-items-center justify-content-between">
+                        <div class="text-dark order-2 order-md-1">
+                            <span class="text-muted fw-bold me-1">© 2026 - MOH</span>
+                        </div>
+                        <ul class="menu menu-gray-600 menu-hover-primary fw-bold order-1">
+                            <li class="menu-item"><a class="menu-link px-2" title="Medical Referral">About</a></li>
+                            <li class="menu-item"><a class="menu-link px-2" title="For Support, Please contact IT Unit at MOH">Support</a></li>
+                            <li class="menu-item"><a class="menu-link px-2" title="Please contact IT Unit">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End Footer -->
+
+            </div>
+            <!-- End Wrapper -->
+
+        </div>
+        <!-- End Page -->
+
+    </div>
+    <!-- End Root -->
+
+    <!-- Scrolltop -->
+    <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+        <span class="svg-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="black" />
+                <path
+                    d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z"
+                    fill="black" />
+            </svg>
+        </span>
+    </div>
+
+    <!-- Scripts -->
+    <script>var hostUrl = "../../assets/";</script>
+    <script src="../../assets/plugins/global/plugins.bundle.js"></script>
+    <script src="../../assets/js/scripts.bundle.js"></script>
+
+    <!-- الاتصال بالباك-إند المحلي (محاكاة Kobo) — بدون أي اتصال بموقع خارجي -->
+    <script>
+        $('#citizenLoginForm').on('submit', function(e) {
+            e.preventDefault();
+
+            $.ajax({
+                url: "/citizen/login",   // الباك-إند المحلي
+                method: "POST",
+                data: $(this).serialize(),
+                success: function(res) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'تم تسجيل الدخول',
+                        timer: 1200,
+                        showConfirmButton: false
+                    }).then(() => {
+                        window.location.href = res.redirect;
+                    });
+                },
+                error: function(xhr) {
+                    var msg = (xhr.responseJSON && xhr.responseJSON.message)
+                        ? xhr.responseJSON.message
+                        : 'تعذّر تسجيل الدخول';
+                    Swal.fire({ icon: 'error', title: 'خطأ', text: msg });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

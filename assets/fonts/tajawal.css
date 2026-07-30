@@ -1,0 +1,32 @@
+/* خط Tajawal - محلي (عربي + لاتيني) */
+@font-face{font-family:"Tajawal";font-style:normal;font-weight:400;font-display:swap;
+  src:url("tajawal/tajawal-arabic-400-normal.woff2") format("woff2"),
+      url("tajawal/tajawal-arabic-400-normal.woff") format("woff");
+  unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0898-08E1,U+08E3-08FF,U+FB50-FDFF,U+FE70-FEFF;}
+@font-face{font-family:"Tajawal";font-style:normal;font-weight:400;font-display:swap;
+  src:url("tajawal/tajawal-latin-400-normal.woff2") format("woff2"),
+      url("tajawal/tajawal-latin-400-normal.woff") format("woff");}
+
+@font-face{font-family:"Tajawal";font-style:normal;font-weight:500;font-display:swap;
+  src:url("tajawal/tajawal-arabic-500-normal.woff2") format("woff2"),
+      url("tajawal/tajawal-arabic-500-normal.woff") format("woff");
+  unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0898-08E1,U+08E3-08FF,U+FB50-FDFF,U+FE70-FEFF;}
+@font-face{font-family:"Tajawal";font-style:normal;font-weight:500;font-display:swap;
+  src:url("tajawal/tajawal-latin-500-normal.woff2") format("woff2"),
+      url("tajawal/tajawal-latin-500-normal.woff") format("woff");}
+
+@font-face{font-family:"Tajawal";font-style:normal;font-weight:700;font-display:swap;
+  src:url("tajawal/tajawal-arabic-700-normal.woff2") format("woff2"),
+      url("tajawal/tajawal-arabic-700-normal.woff") format("woff");
+  unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0898-08E1,U+08E3-08FF,U+FB50-FDFF,U+FE70-FEFF;}
+@font-face{font-family:"Tajawal";font-style:normal;font-weight:700;font-display:swap;
+  src:url("tajawal/tajawal-latin-700-normal.woff2") format("woff2"),
+      url("tajawal/tajawal-latin-700-normal.woff") format("woff");}
+
+@font-face{font-family:"Tajawal";font-style:normal;font-weight:800;font-display:swap;
+  src:url("tajawal/tajawal-arabic-800-normal.woff2") format("woff2"),
+      url("tajawal/tajawal-arabic-800-normal.woff") format("woff");
+  unicode-range:U+0600-06FF,U+0750-077F,U+0870-088E,U+0890-0891,U+0898-08E1,U+08E3-08FF,U+FB50-FDFF,U+FE70-FEFF;}
+@font-face{font-family:"Tajawal";font-style:normal;font-weight:800;font-display:swap;
+  src:url("tajawal/tajawal-latin-800-normal.woff2") format("woff2"),
+      url("tajawal/tajawal-latin-800-normal.woff") format("woff");}
