@@ -5,6 +5,22 @@
     "note": "بيانات تدريبية وهمية تحاكي إرساليات مشروع Kobo — ليست بيانات حقيقية. كلمات المرور مخزّنة كنص صريح لأغراض التدريب فقط."
   },
   "submissions": [
+{
+  "_id": 7,
+  "national_id": "512345678",
+  "password": "1234",
+  "full_name": "محمد رائد علي الكحلوت",
+  "mobile_no": "0599554433",
+  "specialization": "عيون",
+  "referral_date": "2026-07-30",
+  "status": "تحت الإجراء",
+  "travel_status": 0,
+  "is_stopped": false,
+  "is_rejected": false,
+  "rejection_messages": [],
+  "return_reason": null
+},
+
     {
       "_id": 1,
       "national_id": "804734739",
