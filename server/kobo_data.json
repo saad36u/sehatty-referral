@@ -93,4 +93,22 @@
     "cla_approved": 727,
     "cla_denied": 72
   }
+Saad Sayed, [16/02/48 09:07 م]
+{
+  "_id": 2,
+  "national_id": "",
+  "password": "1234",
+  "full_name": "حور احمد يوسف شيخ العيد",
+  "mobile_no": "0567586481",
+  "specialization": "مسالك بولية",
+  "referral_date": "2026-06-27",
+  "status": "معتمد",
+  "travel_status": 0,
+  "is_stopped": false,
+  "is_rejected": false,
+  "rejection_messages": [],
+  "return_reason": null
+}
+
+
 }
