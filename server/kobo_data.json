@@ -6,19 +6,7 @@
   },
   "submissions": [
     {
-      "_id": 1,
-      "national_id": "804734739",
-      "password": "1234",
-      "full_name": "أحمد ابراهيم سلامه الجبالي",
-      "mobile_no": "0566007300",
-      "specialization": "باطنة عامة",
-      "referral_date": "2025-05-28",
-      "status": "معتمد",
-      "travel_status": 0,
-      "is_stopped": false,
-      "is_rejected": false,
-      "rejection_messages": [],
-      "return_reason": null
+     
     },
     {
       "_id": 6,
