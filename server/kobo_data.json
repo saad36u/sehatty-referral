@@ -5,22 +5,6 @@
     "note": "بيانات تدريبية وهمية تحاكي إرساليات مشروع Kobo — ليست بيانات حقيقية. كلمات المرور مخزّنة كنص صريح لأغراض التدريب فقط."
   },
   "submissions": [
-{
-  "_id": 7,
-  "national_id": "512345678",
-  "password": "1234",
-  "full_name": "محمد رائد علي الكحلوت",
-  "mobile_no": "0599554433",
-  "specialization": "عيون",
-  "referral_date": "2026-07-30",
-  "status": "تحت الإجراء",
-  "travel_status": 0,
-  "is_stopped": false,
-  "is_rejected": false,
-  "rejection_messages": [],
-  "return_reason": null
-},
-
     {
       "_id": 1,
       "national_id": "804734739",
@@ -36,8 +20,21 @@
       "rejection_messages": [],
       "return_reason": null
     },
-
-
+    {
+      "_id": 6,
+      "national_id": "438429458",
+      "password": "Np175000",
+      "full_name": "حور أحمد يوسف شيخ العيد",
+      "mobile_no": "0567586481",
+      "specialization": "مسالك بولية",
+      "referral_date": "2026-07-27",
+      "status": "معتمد",
+      "travel_status": 0,
+      "is_stopped": false,
+      "is_rejected": false,
+      "rejection_messages": [],
+      "return_reason": null
+    },
     {
       "_id": 2,
       "national_id": "900112233",
@@ -99,10 +96,25 @@
       "is_rejected": false,
       "rejection_messages": [],
       "return_reason": null
+    },
+    {
+      "_id": 7,
+      "national_id": "512345678",
+      "password": "1234",
+      "full_name": "محمد رائد علي الكحلوت",
+      "mobile_no": "0599554433",
+      "specialization": "عيون",
+      "referral_date": "2026-07-30",
+      "status": "تحت الإجراء",
+      "travel_status": 0,
+      "is_stopped": false,
+      "is_rejected": false,
+      "rejection_messages": [],
+      "return_reason": null
     }
   ],
   "global_stats": {
-    "total_referrals": 31101,
+    "total_referrals": 31102,
     "traveled": 4698,
     "nominated_not_traveled": 5405,
     "urgent_pending": 515,
