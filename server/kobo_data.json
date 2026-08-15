@@ -6,9 +6,6 @@
   },
   "submissions": [
     {
-     
-    },
-    {
       "_id": 6,
       "national_id": "438429458",
       "password": "Hf54000",
@@ -94,6 +91,21 @@
       "specialization": "عيون",
       "referral_date": "2026-07-30",
       "status": "تحت الإجراء",
+      "travel_status": 0,
+      "is_stopped": false,
+      "is_rejected": false,
+      "rejection_messages": [],
+      "return_reason": null
+    },
+    {
+      "_id": 8,
+      "national_id": "424539756",
+      "password": "Npm15700",
+      "full_name": "أبو العبد أسطورة التحويلات",
+      "mobile_no": "0569584566",
+      "specialization": "مسالك مخية",
+      "referral_date": "2026-08-10",
+      "status": "معتمد",
       "travel_status": 0,
       "is_stopped": false,
       "is_rejected": false,
