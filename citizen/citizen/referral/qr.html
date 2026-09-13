@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ar" direction="rtl" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <title>استعلام التحويلات الطبية</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="../../../assets/media/logos/favicon.ico" sizes="256x256" type="image/png">
+    <link href="../../../assets/fonts/tajawal.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/fonts/bootstrap-icons.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/plugins.bundle.css" rel="stylesheet" type="text/css">
+    <link href="../../../assets/style.bundle.rtl.css" rel="stylesheet" type="text/css">
+
+    <style>
+        body { font-family: Tajawal, Helvetica, sans-serif; background: #f5f8fa; margin: 0; }
+
+        .qr-header {
+            background: #1e1e2d;
+            color: #fff;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 80px;
+        }
+        .qr-header .logo { height: 45px; }
+        .qr-header .title { font-size: 22px; font-weight: 600; margin: 0; }
+        .qr-header .menu-icon { font-size: 28px; color: #fff; opacity: .7; }
+
+        .qr-container { max-width: 720px; margin: 0 auto; padding: 20px; }
+
+        .qr-page-title {
+            color: #0d6efd;
+            font-weight: 700;
+            text-align: center;
+            margin: 25px 0 20px;
+            font-size: 22px;
+        }
+
+        .patient-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 40px 25px;
+            text-align: center;
+            box-shadow: 0 2px 12px rgba(0,0,0,.05);
+        }
+        .patient-card .doc-icon {
+            font-size: 70px;
+            color: #6f9ff7;
+            margin-bottom: 15px;
+        }
+        .patient-card .doc-title {
+            font-size: 26px;
+            font-weight: 700;
+            color: #333;
+            margin: 10px 0 20px;
+        }
+        .patient-card .divider {
+            border-top: 2px dotted #b8d0f5;
+            margin: 20px 0;
+        }
+        .patient-card .patient-name {
+            font-size: 22px;
+            font-weight: 700;
+            color: #000;
+            margin: 10px 0;
+        }
+        .patient-card .status-badge {
+            display: inline-block;
+            padding: 8px 26px;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 8px;
+        }
+        .status-approved { background: #e6f9ec; color: #16a34a; }
+        .status-warning  { background: #fff5d6; color: #d97706; }
+        .status-danger   { background: #fee2e2; color: #dc2626; }
+        .status-info     { background: #e0f2fe; color: #0284c7; }
+
+        .patient-card .status-message {
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: 18px;
+            line-height: 1.7;
+        }
+        .patient-card .status-message.info { color: #0284c7; }
+        .patient-card .status-message.success { color: #16a34a; }
+        .patient-card .status-message.warning { color: #d97706; }
+        .patient-card .status-message.danger  { color: #dc2626; }
+
+        .crossings-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px 20px;
+            margin-top: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,.05);
+        }
+        .crossings-card h3 {
+            text-align: center;
+            color: #0d6efd;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+        .crossing {
+            border-radius: 12px;
+            padding: 25px 15px;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .crossing.rafah { background: #fee2e2; }
+        .crossing.kerem { background: #fff5d6; }
+        .crossing .status {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .crossing.rafah .status { color: #dc2626; }
+        .crossing.kerem .status { color: #d97706; }
+        .crossing .name {
+            font-size: 17px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .indicators-card {
+            background: #fff;
+            border-radius: 12px;
+            padding: 30px 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 12px rgba(0,0,0,.05);
+        }
+        .indicators-box {
+            border: 2px dashed #f5a3b5;
+            border-radius: 12px;
+            padding: 25px 20px;
+            background: #fff7f9;
+        }
+        .indicators-box h4 {
+            text-align: center;
+            color: #e53e6d;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        .indicator-row {
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            font-weight: 500;
+            color: #333;
+            padding: 10px 0;
+        }
+        .bullet {
+            display: inline-block;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-left: 12px;
+            flex-shrink: 0;
+        }
+        .bullet.yellow { background: #facc15; }
+        .bullet.blue   { background: #3b82f6; }
+        .bullet.purple { background: #a855f7; }
+
+        .qr-footer {
+            text-align: center;
+            padding: 25px 15px;
+            color: #8899aa;
+            font-size: 15px;
+        }
+        .qr-footer .links { margin-bottom: 8px; font-weight: 600; }
+        .qr-footer .links a { color: #6b7c93; margin: 0 8px; text-decoration: none; }
+
+        .loading-spinner {
+            text-align: center;
+            padding: 60px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <div class="qr-header">
+        <i class="bi bi-list menu-icon"></i>
+        <div class="title">الخدمات الالكترونية</div>
+        <img src="../../../assets/sehatty_moh.png" class="logo" alt="Logo">
+    </div>
+
+    <!-- Content -->
+    <div class="qr-container">
+
+        <h2 class="qr-page-title">🔎 استعلام التحويلات الطبية</h2>
+
+        <div id="loading" class="loading-spinner">
+            <div class="spinner-border text-primary" role="status"></div>
+            <div class="mt-3 text-muted">⏳ جاري تحميل البيانات...</div>
+        </div>
+
+        <div id="content" style="display:none;">
+            <!-- Patient Card -->
+            <div id="patientCard" class="patient-card"></div>
+
+            <!-- Crossings Card -->
+            <div class="crossings-card">
+                <h3>🚪 حالة المعابر</h3>
+                <div class="crossing rafah">
+                    <div class="status">مفتوح (يعمل)</div>
+                    <div class="name">معبر رفح</div>
+                </div>
+                <div class="crossing kerem">
+                    <div class="status">⚠️ يعمل بشكل جزئي</div>
+                    <div class="name">معبر كرم أبو سالم</div>
+                </div>
+            </div>
+
+            <!-- Indicators Card -->
+            <div class="indicators-card">
+                <div class="indicators-box">
+                    <h4>دلالات الحالة</h4>
+                    <div class="indicator-row">
+                        <span class="bullet yellow"></span>
+                        تحت الاجراء .. في اللجنة
+                    </div>
+                    <div class="indicator-row">
+                        <span class="bullet blue"></span>
+                        معتمدة .. تم ارسالها مكتب WHO، يتم التواصل معكم من طرف WHO
+                    </div>
+                    <div class="indicator-row">
+                        <span class="bullet purple"></span>
+                        متابعة محلية .. علاج محلي داخل قطاع غزة
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="noData" style="display:none;" class="text-center py-5">
+            <i class="bi bi-clipboard-x" style="font-size:70px; color:#ccc;"></i>
+            <h3 class="mt-3 text-muted">لا يوجد تحويلات طبية</h3>
+            <p class="text-muted">لا توجد تحويلة مسجلة بهذا الرقم في النظام</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="qr-footer">
+        <div class="links">
+            <a href="#">Contact</a>
+            <a href="#">Support</a>
+            <a href="#">About</a>
+        </div>
+        <div>MOH - 2026 ©</div>
+    </div>
+
+    <script>
+    (function () {
+        const path = window.location.pathname;
+        const nationalId = path.replace(/\/$/, "").split("/").pop();
+
+        fetch("/public/referral/api/" + encodeURIComponent(nationalId))
+            .then(r => r.json())
+            .then(data => {
+                document.getElementById("loading").style.display = "none";
+
+                if (!data.success || !data.transfers || !data.transfers.length) {
+                    document.getElementById("noData").style.display = "block";
+                    return;
+                }
+
+                document.getElementById("content").style.display = "block";
+                renderPatient(data.transfers[0]);
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById("loading").innerHTML =
+                    '<div class="alert alert-danger">حدث خطأ أثناء تحميل البيانات</div>';
+            });
+
+        function renderPatient(item) {
+            let statusText = item.STATUS || "غير محدد";
+            let statusClass = "status-info";
+            let statusMsgClass = "info";
+            let statusMessage = "";
+            let icon = "bi-file-earmark-medical";
+            let iconColor = "#6f9ff7";
+
+            if (item.IS_STOPPED) {
+                statusText = "موقوف";
+                statusClass = "status-danger";
+                statusMsgClass = "danger";
+                statusMessage = "تم ايقاف تحويلتك، يرجى مراجعة طبيبك المعالج خلال شهرين";
+                icon = "bi-exclamation-triangle";
+                iconColor = "#dc2626";
+            } else if (item.TRAVEL_STATUS == 25) {
+                statusText = "تم السفر";
+                statusClass = "status-approved";
+                statusMsgClass = "success";
+                statusMessage = "تم سفر المريض بنجاح";
+                icon = "bi-airplane";
+                iconColor = "#16a34a";
+            } else if (item.STATUS === "معتمد") {
+                statusClass = "status-approved";
+                statusMsgClass = "info";
+                statusMessage = 'طلبكم "معتمد" بانتظار موافقة التنسيق ودولة مستضيفة';
+            } else if (item.STATUS === "تحت الإجراء" || item.STATUS === "تحت الاجراء") {
+                statusClass = "status-warning";
+                statusMsgClass = "warning";
+                statusMessage = "طلبكم تحت الإجراء في اللجنة";
+            } else if (item.STATUS === "مرفوض") {
+                statusClass = "status-danger";
+                statusMsgClass = "danger";
+                statusMessage = "تم رفض التحويلة" + (item.RETURN_REASON ? " - " + item.RETURN_REASON : "");
+            }
+
+            const html = `
+                <i class="bi ${icon} doc-icon" style="color:${iconColor}"></i>
+                <div class="doc-title">استعلام التحويلة</div>
+                <div class="divider"></div>
+                <div class="patient-name">السيد/ة ${item.FULL_NAME || "-"}</div>
+                <div>
+                    <span class="status-badge ${statusClass}">${statusText}</span>
+                </div>
+                ${statusMessage ? `<div class="status-message ${statusMsgClass}">${statusMessage}</div>` : ""}
+            `;
+            document.getElementById("patientCard").innerHTML = html;
+        }
+    })();
+    </script>
+</body>
+</html>
