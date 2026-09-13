@@ -47,6 +47,7 @@ function getSession(req) {
 // ==== تحويل سجل Kobo إلى الشكل الذي تنتظره الواجهة الأمامية ====
 function toTransfer(rec) {
   return {
+    NATIONAL_ID: rec.national_id,
     FULL_NAME: rec.full_name,
     MOBILE_NO: rec.mobile_no,
     SPECIALIZATION: rec.specialization,
@@ -199,6 +200,52 @@ const server = http.createServer(async (req, res) => {
     if (!getSession(req)) return redirect(res, "/citizen/login/");
     return serveStatic(req, res, "/citizen/citizen/referral/index.html");
   }
+
+  // ============ إضافات QR العامة (لا تلمس أي شيء قديم) ============
+
+  // --- GET /public/referral/api/:nationalId : API عام يرجع بيانات التحويلة برقم الهوية ---
+  if (req.method === "GET" && pathname.startsWith("/public/referral/api/")) {
+    try {
+      const nationalId = decodeURIComponent(
+        pathname.replace("/public/referral/api/", "").replace(/\/$/, "")
+      );
+      const data = loadData();
+      const transfers = data.submissions
+        .filter((s) => String(s.national_id) === nationalId)
+        .map(toTransfer);
+
+      return sendJson(res, 200, {
+        success: transfers.length ? 1 : 0,
+        transfers,
+      });
+    } catch (err) {
+      console.error("Public API error:", err);
+      return sendJson(res, 500, { success: 0, transfers: [] });
+    }
+  }
+
+  // --- GET /public/referral/:nationalId : صفحة عرض عامة (بدون جلسة) ---
+  if (
+    req.method === "GET" &&
+    pathname.startsWith("/public/referral/") &&
+    !pathname.startsWith("/public/referral/api/")
+  ) {
+    const filePath = path.join(ROOT, "citizen/citizen/referral/index.html");
+    return fs.readFile(filePath, "utf8", (err, content) => {
+      if (err) {
+        res.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" });
+        res.end("خطأ في تحميل الصفحة");
+        return;
+      }
+      res.writeHead(200, {
+        "Content-Type": "text/html; charset=utf-8",
+        "Cache-Control": "no-store",
+      });
+      res.end(content);
+    });
+  }
+
+  // ============ نهاية إضافات QR ============
 
   // --- ملفات ثابتة (الصفحة الرئيسية، صفحة الدخول، assets ...) ---
   if (req.method === "GET") {
