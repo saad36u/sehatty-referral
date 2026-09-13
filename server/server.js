@@ -230,7 +230,7 @@ const server = http.createServer(async (req, res) => {
     pathname.startsWith("/public/referral/") &&
     !pathname.startsWith("/public/referral/api/")
   ) {
-    const filePath = path.join(ROOT, "citizen/citizen/referral/index.html");
+    const filePath = path.join(ROOT, "citizen/citizen/referral/qr.html");
     return fs.readFile(filePath, "utf8", (err, content) => {
       if (err) {
         res.writeHead(500, { "Content-Type": "text/plain; charset=utf-8" });
