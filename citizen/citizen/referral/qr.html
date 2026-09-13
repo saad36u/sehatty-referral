@@ -7,8 +7,14 @@
 
     <link rel="icon" href="../../../assets/media/logos/favicon.ico" sizes="256x256" type="image/png">
 
+    <!-- Fonts -->
     <link href="../../../assets/fonts/tajawal.css" rel="stylesheet" type="text/css">
     <link href="../../../assets/fonts/bootstrap-icons.css" rel="stylesheet" type="text/css">
+
+    <!-- Line Awesome (للأيقونات las) -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+    <!-- Global Stylesheets -->
     <link href="../../../assets/plugins.bundle.css" rel="stylesheet" type="text/css">
     <link href="../../../assets/style.bundle.rtl.css" rel="stylesheet" type="text/css">
 
@@ -41,30 +47,39 @@
             }
         }
 
-        /* تغميق جملة "السيد/ة ... طلبك" كاملة */
-        #search_result .patient-line {
-            font-weight: 750 !important;
+        /* تغميق جملة "السيد/ة ... طلبك" كاملة - وزن 700 */
+        #search_result {
+            font-weight: 700 !important;
             color: #111 !important;
-            font-size: 1.1rem;
         }
     </style>
 </head>
 
 <body id="kt_body" class="header-fixed header-tablet-and-mobile-fixed toolbar-enabled">
 
+    <!-- Root -->
     <div class="d-flex flex-column flex-root">
+
+        <!-- Page -->
         <div class="page d-flex flex-row flex-column-fluid">
+
+            <!-- Wrapper -->
             <div class="wrapper d-flex flex-column flex-row-fluid" id="kt_wrapper">
 
                 <!-- Header -->
                 <div id="kt_header" class="header" data-kt-sticky="true" style="height: 105px;">
                     <div class="container-xxl header-container">
+                        <!-- Logo -->
                         <div class="d-flex align-items-center">
                             <a href="#">
-                                <img alt="Logo" src="../../../assets/sehatty_moh.png" class="h-50px">
+                                <img alt="Logo" src="https://sehatty.ps/assets/sehatty_moh.png" class="h-50px">
                             </a>
                         </div>
+
+                        <!-- Title -->
                         <div class="header-title">الخدمات الالكترونية</div>
+
+                        <!-- Mobile Toggle -->
                         <div class="d-lg-none">
                             <button class="btn btn-icon btn-active-color-primary" id="kt_header_menu_toggle">
                                 <span class="svg-icon svg-icon-1">
@@ -79,28 +94,37 @@
                 </div>
                 <!-- End Header -->
 
+                <!-- Toolbar -->
                 <div class="toolbar py-5 py-lg-7" id="kt_toolbar"></div>
 
+                <!-- Content -->
                 <div id="kt_content_container" class="d-flex flex-column-fluid align-items-start container-xxl">
                     <div class="content flex-row-fluid" id="kt_content">
 
     <div class="card mb-10">
+        <!--begin::Card header-->
         <div class="card-header text-center">
             <h3 class="card-title d-flex justify-content-center align-items-center flex-column w-100">
                 <span class="card-label fw-bolder text-primary fs-2">
-                    <i class="bi bi-search text-primary fs-2"></i>
+                    <i class="las la-search text-primary fs-2"></i>
                     استـعلام التحويلات الطبيـة
                 </span>
             </h3>
         </div>
+        <!--end::Card header-->
 
+        <!--begin::Card body-->
         <div class="card-body">
 
+            <!--begin::Alert-->
             <div class="alert alert-dismissible bg-light-primary d-flex flex-center flex-column py-10 px-10 px-lg-20 mb-10">
+                <!--begin::Close-->
                 <button type="button" class="position-absolute top-0 end-0 m-2 btn btn-icon btn-icon-primary" data-bs-dismiss="alert">
                     <i class="bi bi-x fs-1 text-primary"></i>
                 </button>
+                <!--end::Close-->
 
+                <!--begin::Icon-->
                 <span class="svg-icon svg-icon-4qx svg-icon-primary mb-3">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path opacity="0.3" d="M14 2H6C4.89543 2 4 2.89543 4 4V20C4 21.1046 4.89543 22 6 22H18C19.1046 22 20 21.1046 20 20V8L14 2Z" fill="black"></path>
@@ -109,12 +133,19 @@
                         <path d="M15 12C15 14.2 13.2 16 11 16C8.8 16 7 14.2 7 12C7 9.8 8.8 8 11 8C13.2 8 15 9.8 15 12ZM11 9.6C9.68 9.6 8.6 10.68 8.6 12C8.6 13.32 9.68 14.4 11 14.4C12.32 14.4 13.4 13.32 13.4 12C13.4 10.68 12.32 9.6 11 9.6Z" fill="black"></path>
                     </svg>
                 </span>
+                <!--end::Icon-->
 
+                <!--begin::Wrapper-->
                 <div class="text-center">
+                    <!--begin::Title-->
                     <h1 class="fw-bolder mb-5">استعلام التحويلة</h1>
+                    <!--end::Title-->
 
+                    <!--begin::Separator-->
                     <div class="separator separator-dashed border-primary opacity-25 mb-5"></div>
+                    <!--end::Separator-->
 
+                    <!--begin::Content-->
                     <div class="mb-9 text-dark">
                         <span class="fs-5" id="search_result">
                             <div class="text-center py-3">
@@ -125,18 +156,23 @@
                             </div>
                         </span>
                     </div>
+                    <!--end::Content-->
                 </div>
+                <!--end::Wrapper-->
+
             </div>
+            <!--end::Alert-->
 
             <div class="separator separator-dashed border-primary opacity-25 mb-5"></div>
             <div class="row g-5 justify-content-center mb-10"></div>
 
             <div class="row g-5 justify-content-center ">
 
+                <!-- معبر رفح -->
                 <div class="col-md-5 col-12">
                     <div class="text-center p-5 rounded-3 border-0" style="background: linear-gradient(135deg, #fdeaea 0%, #fff 100%);">
                         <div class="d-flex flex-column align-items-center">
-                            <i class="bi bi-x-circle fs-1 text-danger mb-3"></i>
+                            <i class="las la-times-circle fs-1 text-danger mb-3"></i>
                             <h4 class="fw-bolder text-dark mb-2">معبر رفح</h4>
                             <span class="badge fs-4 fw-bold px-4 py-2 rounded-pill" style="background-color: #f8d7da; color: #842029;">
                                 مفتوح (يعمل)
@@ -160,10 +196,12 @@
             </div>
 
         </div>
+        <!--end::Card body-->
     </div>
 
     <div class="card mb-10">
         <div class="card-body">
+            <!--begin::CARD-->
             <div id="dvmsg2" class="alert alert-dismissible bg-light-danger border border-danger border-dashed d-flex flex-center flex-sm-row w-100 p-5 mb-10">
 
                 <div class="d-flex flex-column">
@@ -188,7 +226,9 @@
 
                     </div>
                 </div>
+                <!-- End Content -->
 
+                <!-- Footer -->
                 <div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
                     <div class="container-xxl d-flex flex-column flex-md-row align-items-center justify-content-between">
                         <div class="text-dark order-2 order-md-1">
@@ -201,15 +241,33 @@
                         </ul>
                     </div>
                 </div>
+                <!-- End Footer -->
 
             </div>
+            <!-- End Wrapper -->
+
         </div>
+        <!-- End Page -->
+
+    </div>
+    <!-- End Root -->
+
+    <!-- Scrolltop -->
+    <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
+        <span class="svg-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="black"></rect>
+                <path d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z" fill="black"></path>
+            </svg>
+        </span>
     </div>
 
+    <!-- Scripts -->
     <script>var hostUrl = "../../../assets/";</script>
     <script src="../../../assets/plugins/global/plugins.bundle.js"></script>
     <script src="../../../assets/js/scripts.bundle.js"></script>
 
+    <!-- ============ سكريبت ديناميكي: يجيب البيانات من API ============ -->
     <script>
     (function () {
         const path = window.location.pathname;
@@ -222,7 +280,7 @@
 
                 if (!data.success || !data.transfers || !data.transfers.length) {
                     container.innerHTML = `
-                        <div class="text-center py-5">
+                        <div class="text-center">
                             <i class="bi bi-clipboard-x fs-5x text-muted mb-5 d-block"></i>
                             <h3 class="fw-bold mb-3">لا يوجد تحويلات طبية</h3>
                             <div class="text-gray-600 fs-6">لا توجد تحويلة مسجلة بهذا الرقم في النظام</div>
@@ -270,7 +328,7 @@
                 statusMsg = "تم رفض التحويلة" + (item.RETURN_REASON ? " - " + item.RETURN_REASON : "");
             }
 
-            let html = `<span class="patient-line">السيد/ة ${item.FULL_NAME || "-"} طلبك</span>
+            let html = `السيد/ة ${item.FULL_NAME || "-"} طلبك
                 <span class="badge py-3 px-4 ${badgeClass} fs-5 fw-bolder">${statusText}</span>`;
 
             if (statusMsg) {
