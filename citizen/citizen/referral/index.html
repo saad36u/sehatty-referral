@@ -20,8 +20,6 @@
     <link href="../../../assets/plugins.bundle.css" rel="stylesheet" type="text/css">
     <link href="../../../assets/style.bundle.rtl.css" rel="stylesheet" type="text/css">
 
-    <!-- ملاحظة: fullcalendar / datatables / prismjs غير مستخدمة في هذه الصفحة ولا توجد نسخة محلية لها -->
-
     <style>
         body {
             font-family: Tajawal, Helvetica, sans-serif;
@@ -56,11 +54,9 @@
     <style type="text/css">.apexcharts-canvas {
   position: relative;
   user-select: none;
-  /* cannot give overflow: hidden as it will crop tooltips which overflow outside chart area */
 }
 
 
-/* scrollbar is not visible by default for legend, hence forcing the visibility */
 .apexcharts-canvas ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 6px;
@@ -767,7 +763,7 @@
 
                         <!-- Logout -->
                         <div class="d-none d-lg-flex align-items-center">
-                            <a href="/citizen/logout" class="btn btn-sm btn-light-danger fw-bold">
+                            <a href="/citizen/logout" id="logoutBtn" class="btn btn-sm btn-light-danger fw-bold">
                                 <i class="bi bi-box-arrow-right me-1"></i>
                                 تسجيل الخروج
                             </a>
@@ -1245,15 +1241,29 @@
 
 
         function Search_data() {
-    let personid = $('#citizen_idno').val();
+    // === كشف وضع QR العام ===
+    const isPublicMode = window.location.pathname.startsWith("/public/referral/");
+    let publicId = null;
+    if (isPublicMode) {
+        publicId = window.location.pathname
+            .replace("/public/referral/", "")
+            .replace(/\/$/, "");
+        // إخفاء زر تسجيل الخروج (المستخدم مش مسجل دخول)
+        $('#logoutBtn').hide();
+    }
 
-    let param = {
-        random: Math.random(),
-        personid: personid
-    };
+    let ajaxUrl, param;
+    if (isPublicMode && publicId) {
+        ajaxUrl = "/public/referral/api/" + encodeURIComponent(publicId);
+        param = { random: Math.random() };
+    } else {
+        let personid = $('#citizen_idno').val();
+        ajaxUrl = "/citizen/result";
+        param = { random: Math.random(), personid: personid };
+    }
 
     $.ajax({
-        url: "/citizen/result",
+        url: ajaxUrl,
         type: "GET",
         dataType: "json",
         data: param,
@@ -1367,11 +1377,18 @@
                                         <i class="bi bi-person-fill me-2"></i>
                                         ${item.FULL_NAME}
                                     </div>
-                                    ${showStatus ? `
-                                        <span class="badge ${statusBadge} fs-7 fw-bold">
-                                            ${item.STATUS}
-                                        </span>
-                                    ` : ''}
+                                    <div class="d-flex align-items-center gap-2">
+                                        ${showStatus ? `
+                                            <span class="badge ${statusBadge} fs-7 fw-bold">
+                                                ${item.STATUS}
+                                            </span>
+                                        ` : ''}
+                                        ${item.NATIONAL_ID ? `
+                                            <button type="button" class="btn btn-sm btn-light-primary" onclick="printQRCode('${item.NATIONAL_ID}')">
+                                                <i class="bi bi-qr-code"></i> باركود
+                                            </button>
+                                        ` : ''}
+                                    </div>
                                 </div>
 
                                 <div class="text-gray-700 fs-6">
@@ -1691,6 +1708,53 @@ ${rejectionBlock}
                     Swal.fire('خطأ', 'حدث خطأ أثناء جلب البيانات', 'error');
                 }
             });
+        }
+
+        // ============ دالة طباعة الباركود (QR) ============
+        function printQRCode(nationalId) {
+            const publicUrl = window.location.origin + "/public/referral/" + nationalId;
+            const qrImageUrl = "https://api.qrserver.com/v1/create-qr-code/?size=400x400&margin=10&data=" + encodeURIComponent(publicUrl);
+
+            const win = window.open("", "_blank");
+            if (!win) {
+                Swal.fire('تنبيه', 'الرجاء السماح بالنوافذ المنبثقة لطباعة الباركود', 'warning');
+                return;
+            }
+
+            win.document.write(`
+                <!DOCTYPE html>
+                <html dir="rtl" lang="ar">
+                <head>
+                    <meta charset="utf-8">
+                    <title>باركود الاستعلام - ${nationalId}</title>
+                    <style>
+                        body { font-family: Tajawal, Arial, sans-serif; text-align: center; padding: 40px; background: #fff; }
+                        .wrap { max-width: 500px; margin: 0 auto; border: 2px dashed #0d6efd; border-radius: 12px; padding: 30px; }
+                        h2 { color: #0d6efd; margin: 0 0 20px; }
+                        img { margin: 10px auto; display: block; }
+                        .id { color: #333; font-size: 16px; margin-top: 15px; font-weight: bold; }
+                        .hint { color: #666; font-size: 14px; margin-top: 8px; }
+                        .url { color: #999; font-size: 11px; margin-top: 10px; word-break: break-all; direction: ltr; }
+                        @media print { .no-print { display: none; } }
+                    </style>
+                </head>
+                <body>
+                    <div class="wrap">
+                        <h2>🔎 رمز الاستعلام عن التحويلة</h2>
+                        <img src="${qrImageUrl}" alt="QR Code" width="300" height="300">
+                        <div class="id">رقم الهوية: ${nationalId}</div>
+                        <div class="hint">امسح الرمز بكاميرا الجوال لعرض تفاصيل الحالة</div>
+                        <div class="url">${publicUrl}</div>
+                    </div>
+                    <script>
+                        window.onload = function() {
+                            setTimeout(function() { window.print(); }, 500);
+                        };
+                    <\/script>
+                </body>
+                </html>
+            `);
+            win.document.close();
         }
     </script>
 
