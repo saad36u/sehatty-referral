@@ -41,10 +41,11 @@
             }
         }
 
-        /* تمغيق اسم المريض */
-        #search_result .patient-name {
+        /* تغميق جملة "السيد/ة ... طلبك" كاملة */
+        #search_result .patient-line {
             font-weight: 800 !important;
             color: #111 !important;
+            font-size: 1.1rem;
         }
     </style>
 </head>
@@ -269,7 +270,7 @@
                 statusMsg = "تم رفض التحويلة" + (item.RETURN_REASON ? " - " + item.RETURN_REASON : "");
             }
 
-            let html = `السيد/ة <span class="patient-name">${item.FULL_NAME || "-"}</span> طلبك
+            let html = `<span class="patient-line">السيد/ة ${item.FULL_NAME || "-"} طلبك</span>
                 <span class="badge py-3 px-4 ${badgeClass} fs-5 fw-bolder">${statusText}</span>`;
 
             if (statusMsg) {
